@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Segoe-UI-bold';
+    src:  url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Segoe-UI-Semibolt';
+    src:  url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Segoe-UI';
+    src:  url('../assets/fonts/Segoe-UI.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'MYRIADPRO-SEMIBOLD';
+    src:  url('../assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Inter_18pt-Regular';
+    src:  url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Inter_18pt-Light';
+    src:  url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+:root {
+    --gradient1: linear-gradient(90deg, #29CA9C 0%, #1498CA 100%);
+    --border-width: 3px;
+    --green2: #29CA9C;
+    --green1: #013638;
+    --white: #ffffff;
+    --hellblau: #E6EBEC;
+    --coral: #ED4E52;
+    --background-footer: var(--green1);
+    --text-color-dark: var(--green1);
+    --border: var(--gradient1);
+    --button: var(--green2);
+    --text-white: var(var(--white));
+    --icon-hover: var(var(--white));
+    --input-sacsful: var(--gradient1);
+    --input-enter: var(--hellblau);
+    --input-invalid: var(var(--coral));
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+
+
