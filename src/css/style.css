@@ -45,20 +45,20 @@
 :root {
     --gradient1: linear-gradient(90deg, #29CA9C 0%, #1498CA 100%);
     --border-width: 3px;
-    --green2: #29CA9C;
-    --green1: #013638;
+    --green1: #29CA9C;
+    --green2: #013638;
     --white: #ffffff;
     --hellblau: #E6EBEC;
     --coral: #ED4E52;
-    --background-footer: var(--green1);
-    --text-color-dark: var(--green1);
+    --background-footer: var(--green2);
+    --text-color-dark: var(--green2);
     --border: var(--gradient1);
-    --button: var(--green2);
-    --text-white: var(var(--white));
-    --icon-hover: var(var(--white));
+    --button: var(--green1);
+    --text-white: var(--white);
+    --icon-hover: var(--white);
     --input-sacsful: var(--gradient1);
     --input-enter: var(--hellblau);
-    --input-invalid: var(var(--coral));
+    --input-invalid: var(--coral);
 }
 *,
 *::before,
@@ -77,6 +77,76 @@ ul,
 li {
     list-style-type: none;
 }
+
+.button_border {
+    padding: 6px 20px;
+    background-color: transparent;
+    color: var(--text-white);
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.button_border:hover {
+    background-color: #FFFFFF33;
+    color: var(--text-white);
+    border: none;
+}
+
+.button_border:active {
+    position: relative;
+}
+
+.button_border:active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 4px;
+    background: var(--gradient1);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.button {
+    background-color: #29CA9C;
+    border: none;
+    color: white;
+    padding: 8px 30px 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; 
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #29CA9C;
+
+  }
+
+  .button:active {
+    background: linear-gradient(to right , #29CA9C, #1498CA);
+  }
+
+  .button_disable {
+    background-color: #29CA9C80;
+    border: none;
+    color: white;
+    padding: 8px 30px 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px; 
+    transition: background-color 0.3s;
+  }
 
 
 

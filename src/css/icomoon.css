@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../assets/fonts/fonts-icomoon/fonts/icomoon.eot?75zm52');
-  src:  url('../assets/fonts/fonts-icomoon/icomoon.eot?75zm52#iefix') format('embedded-opentype'),
-    url('../assets/fonts/fonts-icomoon/icomoon.ttf?75zm52') format('truetype'),
-    url('../assets/fonts/fonts-icomoon/icomoon.woff?75zm52') format('woff'),
-    url('../assets/fonts/fonts-icomoon/icomoon.svg?75zm52#icomoon') format('svg');
+  src:  url('../assets/fonts/fonts-icomoon/fonts/icomoon.eot?19li3k');
+  src:  url('../assets/fonts/fonts-icomoon/icomoon.eot?19li3k#iefix') format('embedded-opentype'),
+    url('../assets/fonts/fonts-icomoon/icomoon.ttf?19li3k') format('truetype'),
+    url('../assets/fonts/fonts-icomoon/icomoon.woff?19li3k') format('woff'),
+    url('../assets/fonts/fonts-icomoon/icomoon.svg?19li3k#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-check:before {
+  content: "\e90b";
+  color: black;
+}
+.icon-alert:before {
+  content: "\e90a";
+  color: black;
+}
 .icon-geolocation:before {
   content: "\e909";
 }
