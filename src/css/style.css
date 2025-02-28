@@ -40,8 +40,6 @@
     font-style: normal;
     line-height: normal;
 }
-
-
 :root {
     --gradient1: linear-gradient(90deg, #29CA9C 0%, #1498CA 100%);
     --border-width: 3px;
@@ -68,17 +66,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 a {
     text-decoration: none;
     cursor: pointer;
 }
-
 ul,
 li {
     list-style-type: none;
 }
-
 .button_border {
     padding: 6px 20px;
     background-color: transparent;
@@ -88,17 +83,14 @@ li {
     font-size: 24px;
     cursor: pointer;
 }
-
 .button_border:hover {
-    background-color: #FFFFFF33;
+    background-color: var(--hover);
     color: var(--text-white);
     border: none;
 }
-
 .button_border:active {
     position: relative;
 }
-
 .button_border:active::before {
     content: "";
     position: absolute;
@@ -149,7 +141,7 @@ li {
     transition: background-color 0.3s;
   }
 
-  header {
+ #header {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/large_bg.webp);
     background-size: cover;
     background-position: center;
@@ -161,14 +153,7 @@ li {
     background-color: transparent !important; 
     padding: 0.25rem 0.75rem;
 }
-body {
-    padding-top: 80px; 
-}
-.header-title {
-    margin-top: -80px !important;
-}
-.academy-text {
-    /* color: white;  */
+.headerLogoText {
     color: var(--text-white);
     margin-left: 10px; 
     font-size: 1rem; 
@@ -200,23 +185,21 @@ nav.navbar {
     display: block;
     width: 30px;
     height: 3px;
-    /* background-color: white;  */
     background-color: var(--white);
 }
-.line {
+.headerLine {
     margin: 5px 0;
     width: 1.5rem;
     height: .2em;
     background-color: var(--white);
 }
-img {
+.headerLogo {
     width: 52px;
     margin-top: 20px;
 }
 .nav-link {
     display: inline-block !important;
 }
-
 .navbar-nav .nav-link {
     color: var(--text-white);
     font-size: 1.5rem; 
@@ -227,11 +210,9 @@ img {
     color: var(--white);
 }
 .navbar-nav .nav-item :hover{
-    /* background: #FFFFFF33; */
     background: var(--hover);
 } 
-
-.header-title h1 {
+.header-title .primary {
     font-size: 2rem;
     font-weight: 700;
     margin: 478px 150px 66px 150px;
@@ -251,14 +232,13 @@ img {
     bottom: 0px;
     border: 2px solid transparent;
     border-radius: 5px;
-    /* background: linear-gradient(90deg, #00c6ff, #0072ff); */
     background: var(--gradient1);
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
 @media (max-width: 768px) {
-    header {
+    #header {
         background: url(../images/smile_bg.webp);
         background-size: cover;
         background-position: center;
@@ -267,13 +247,9 @@ img {
         text-align: center;
     }
     .navbar-toggler {
-        border: none !important; 
-        
+        border: none !important;    
     }
-    .header-title {
-        margin-top: -80px !important;
-    }
-    .header-title h1 {
+    .header-title .primary {
         font-size: 1.75rem;
         margin: 478px 0px 10px 0px;
         background-color: var(--green2);
@@ -288,7 +264,7 @@ img {
     .nav-link {
         display: inline-block;
     }
-    .academy-text {
+    .headerLogoText {
         color: var(--text-color-dark);        
     }
   
