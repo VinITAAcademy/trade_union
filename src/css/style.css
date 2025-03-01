@@ -1,41 +1,46 @@
 @font-face {
     font-family: 'Segoe-UI-bold';
-    src:  url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Segoe-UI-Semibolt';
-    src:  url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Segoe-UI';
-    src:  url('../assets/fonts/Segoe-UI.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'MYRIADPRO-SEMIBOLD';
-    src:  url('../assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('truetype');
+    src: url('../assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('truetype');
     font-weight: 600;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Inter_18pt-Regular';
-    src:  url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Inter_18pt-Light';
-    src:  url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
+    src: url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -58,7 +63,17 @@
     --input-sacsful: var(--gradient1);
     --input-enter: var(--hellblau);
     --input-invalid: var(--coral);
+    --font1-700: 'Segoe-UI-bold';
+    --font1-600: 'Segoe-UI-Semibolt';
+    --font1-400: 'Segoe-UI';
+    --font2-600: 'MYRIADPRO-SEMIBOLD';
+    --font3-400: 'Inter_18pt-Regular';
+    --font3-300: 'Inter_18pt-Light';
+    --font-footer-contacts-title: var(--font3-400);
+    --font-footer-contacts-content: var(--font1-600);
+    
 }
+
 *,
 *::before,
 *::after {
@@ -104,6 +119,7 @@ li {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
+
 .button {
     background-color: #29CA9C;
     border: none;
@@ -114,20 +130,20 @@ li {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px; 
+    border-radius: 4px;
     transition: background-color 0.3s;
-  }
+}
 
-  .button:hover {
+.button:hover {
     background-color: #29CA9C;
 
-  }
+}
 
-  .button:active {
-    background: linear-gradient(to right , #29CA9C, #1498CA);
-  }
+.button:active {
+    background: linear-gradient(to right, #29CA9C, #1498CA);
+}
 
-  .button_disable {
+.button_disable {
     background-color: #29CA9C80;
     border: none;
     color: white;
@@ -137,9 +153,9 @@ li {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px; 
+    border-radius: 4px;
     transition: background-color 0.3s;
-  }
+}
 
  #header {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/large_bg.webp);
@@ -272,4 +288,51 @@ nav.navbar {
 
 
 
+/* =============================== Footer ======================== */
+.footer {
+    background-color: var(--background-footer);
+    color: var(--text-white);
+    font-size: 24px;   
+}
 
+.footerColorTextElement {
+    color: var(--text-white);
+}
+
+.footerTextElementP {
+    font-family: var(--font-footer-contacts-title);
+}
+
+.footerConteinerRightFont {
+    font-size: 28px;
+    font-family: var(--font-footer-contacts-content);
+    padding-top: 11px;
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-container:hover {
+    background-color: #FFFFFF33;
+}
+
+.icon-container:active {
+    background-color: unset;
+}
+
+.icon {
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+
+/* =============================== Footer end ======================== */
