@@ -1,41 +1,46 @@
 @font-face {
     font-family: 'Segoe-UI-bold';
-    src:  url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Segoe-UI-Semibolt';
-    src:  url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Segoe-UI';
-    src:  url('../assets/fonts/Segoe-UI.ttf') format('truetype');
+    src: url('../assets/fonts/Segoe-UI.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'MYRIADPRO-SEMIBOLD';
-    src:  url('../assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('truetype');
+    src: url('../assets/fonts/MYRIADPRO-SEMIBOLD.OTF') format('truetype');
     font-weight: 600;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Inter_18pt-Regular';
-    src:  url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
+    src: url('../assets/fonts/Inter_18pt-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     line-height: normal;
 }
+
 @font-face {
     font-family: 'Inter_18pt-Light';
-    src:  url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
+    src: url('../assets/fonts/Inter_18pt-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
     line-height: normal;
@@ -60,6 +65,7 @@
     --input-enter: var(--hellblau);
     --input-invalid: var(--coral);
 }
+
 *,
 *::before,
 *::after {
@@ -111,6 +117,7 @@ li {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
+
 .button {
     background-color: #29CA9C;
     border: none;
@@ -121,20 +128,20 @@ li {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px; 
+    border-radius: 4px;
     transition: background-color 0.3s;
-  }
+}
 
-  .button:hover {
+.button:hover {
     background-color: #29CA9C;
 
-  }
+}
 
-  .button:active {
-    background: linear-gradient(to right , #29CA9C, #1498CA);
-  }
+.button:active {
+    background: linear-gradient(to right, #29CA9C, #1498CA);
+}
 
-  .button_disable {
+.button_disable {
     background-color: #29CA9C80;
     border: none;
     color: white;
@@ -144,9 +151,9 @@ li {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 4px; 
+    border-radius: 4px;
     transition: background-color 0.3s;
-  }
+}
 
 
 /* =============================== Footer ======================== */
@@ -156,48 +163,46 @@ li {
     font-size: 24px;
     width: 1440px;
     height: auto;
-
-
-    a {
-        color: var(--text-white);
-
-    }
-
-    p {
-        font-family: Inter_18pt-Light;
-    }
-
-    .font_container_footer_right {
-        font-size: 28px;
-        font-family: 'Segoe-UI-Semibolt';
-        padding-top: 11px;
-
-    }
-
-    .icon-container {
-        width: 60px;
-        height: 60px;
-        padding: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border-radius: 2px;
-        transition: background-color 0.3s ease;
-    }
-
-    .icon-container:hover {
-        background-color: #FFFFFF33;
-    }
-
-    .icon-container:active {
-        background-color: unset;
-    }
-
-    .icon {
-        font-size: 28px;
-        transition: color 0.3s ease;
-    }
-
 }
+
+.footerColorTextElement {
+    color: var(--text-white);
+}
+
+.footerTextElementP {
+    font-family: Inter_18pt-Light;
+}
+
+.footerConteinerRightFont {
+    font-size: 28px;
+    font-family: 'Segoe-UI-Semibolt';
+    padding-top: 11px;
+}
+
+.icon-container {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.icon-container:hover {
+    background-color: #FFFFFF33;
+}
+
+.icon-container:active {
+    background-color: unset;
+}
+
+.icon {
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+
 /* =============================== Footer end ======================== */
