@@ -89,6 +89,30 @@ ul,
 li {
     list-style-type: none;
 }
+body {
+    font-size: var(--xxl-font-size);
+}
+@media (max-width: 575px) {
+body {
+    font-size: var(--sm-font-size 16px);
+}
+}
+@media (max-width: 768px) {
+body {
+    font-size: var(--md-font-size 20p);
+}
+}
+@media (max-width: 991px) {
+body {
+    font-size: var(--lg-font-size 24px);
+}
+}
+@media (max-width: 1199px) {
+body {
+    font-size: var(--xl-font-size 28px);
+}
+}
+
 .button_border {
     padding: 6px 20px;
     background-color: transparent;
@@ -227,7 +251,7 @@ nav.navbar {
 .navbar-nav .nav-item :hover{
     background: var(--hover);
 } 
-.header-title .primary {
+.headerTitle .primary {
     font-size: 2rem;
     font-weight: 700;
     margin: 478px 150px 66px 150px;
@@ -251,6 +275,59 @@ nav.navbar {
     -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
+}
+/* ----------------------------------------------------------------------------------------------------------- */ 
+.newsCard {
+    border-radius: 0;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s;
+}
+.containerNews {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.newsCard:hover {
+    transform: scale(1.03);
+}
+.newsImages {
+    width: 100%;
+    height: auto;
+}
+.newsSubImage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 20px;
+}
+.newsTitle { 
+   font-size: 36px;
+   font-weight: bold; 
+   color: var(--green2);
+   margin: 0;
+}
+.newsAlt {
+    font-weight: bold; 
+    font-size: 28px;
+    color: var(--green2);
+    margin: 0;
+}
+.newsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 42px;
+    background: var(--green1);
+    color: var(--text-white);
+    border-radius: 0;
+    font-size: 20px;
+}
+.newsLine {
+    width: 100%;
+    border-top: 3px solid var(--green1);
+    margin: 5px 0 40px 0;
 }
 @media (max-width: 768px) {
     #header {
