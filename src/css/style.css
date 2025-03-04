@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Segoe-UI-bold';
+    font-family: 'Segoe-UI-Bold';
     src: url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
@@ -71,7 +71,9 @@
     --font3-300: 'Inter_18pt-Light';
     --font-footer-contacts-title: var(--font3-400);
     --font-footer-contacts-content: var(--font1-600);
-    
+    --gradient2: linear-gradient(180deg, #29CA9C 0%, #1498CA 100%);
+    --fontAboutUsTitle: var(--font1-700);
+
 }
 
 *,
@@ -286,6 +288,61 @@ nav.navbar {
 }
 
 
+/* =============================== about us section start ======================== */
+
+
+    .fontAboutUsTitle {
+        font-family: var(--font1-700);
+        font-size: 36px;      
+    }
+
+    .fontAboutUsContent {
+        font-family: var(--font3-400);
+        font-size: 24px;
+    }
+
+    .fontAboutUsButton {
+        font-family: var(--font2-600);
+        /* font-size: 20px; */
+    }
+
+    .underline {
+        border-bottom: 2px solid #29CA9C; 
+        padding-bottom: 5px;      
+    }
+
+    .aboutUsFontNumber {
+        font-family: var(--font1-400);
+        background: var(--gradient2);
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+        font-size: 36px;        
+    }
+
+    .fontButton {
+        font-family: var(--font3-400);
+        font-size: 20px;       
+    }
+   
+
+/* =============================== about us section end ======================== */
+
+/* =============================== Form start ======================== */
+
+.formFontTitle {
+    font-family: var(--font1-600);
+    font-size: 24px;
+}
+.formFontContent {
+    font-family: var(--font3-400);
+    font-size: 20px;
+}
+.formBorder {
+    border: 2px solid #01363880;
+    border-radius: 4px;
+}
+
+/* =============================== Form start ======================== */
 
 
 /* =============================== Footer ======================== */
