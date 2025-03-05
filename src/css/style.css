@@ -177,7 +177,7 @@ li {
     border: none; 
     background-color: transparent !important; 
     padding: 0.25rem 0.75rem;
-    margin: 7px 28px 0 0;
+    margin: 7px 28px 0 31px;
 }
 .navbar {
     transition: all 0.5s;
@@ -347,6 +347,7 @@ li {
 }
 /* =============================== Footer end ======================== */
 @media (max-width: 768px) {
+    /* -------header start----------------------------------------------- */
     #header {
         background: url(../images/smile_bg.webp);
         background-size: cover;
@@ -379,13 +380,15 @@ li {
     .headerLogoText {
         color: black;
     }
+    /* --------------header end--------------------------------------------------------- */
+    /* --------------news start--------------------------------------------------------- */
     .newsTitle {
         font-size: 24px;
     }
     .newsAlt {
         font-size: 18px;
     }
-  
+    /* --------------news end--------------------------------------------------------- */ 
 }
 
 
