@@ -1,13 +1,20 @@
 @font-face {
-    font-family: 'Segoe-UI-bold';
+    font-family: 'Segoe-UI-Bold';
     src: url('../assets/fonts/Segoe-UI-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+}
+@font-face {
+    font-family: 'Segoe-UI This Bold';
+    src: url('../assets/fonts/Segoe\ UI\ This\ Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     line-height: normal;
 }
 
 @font-face {
-    font-family: 'Segoe-UI-Semibolt';
+    font-family: 'Segoe-UI-Semibold';
     src: url('../assets/fonts/Segoe-UI-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -50,6 +57,7 @@
     --border-width: 3px;
     --green1: #29CA9C;
     --green2: #013638;
+    --black: black;
     --white: #ffffff;
     --hellblau: #E6EBEC;
     --coral: #ED4E52;
@@ -63,14 +71,19 @@
     --input-sacsful: var(--gradient1);
     --input-enter: var(--hellblau);
     --input-invalid: var(--coral);
-    --font1-700: 'Segoe-UI-bold';
-    --font1-600: 'Segoe-UI-Semibolt';
+    --font1-700: 'Segoe-UI-Bold';
+    --font1-600: 'Segoe-UI-Semibold';
     --font1-400: 'Segoe-UI';
     --font2-600: 'MYRIADPRO-SEMIBOLD';
     --font3-400: 'Inter_18pt-Regular';
     --font3-300: 'Inter_18pt-Light';
+    --font4-700: "Segoe-UI This Bold";
     --font-footer-contacts-title: var(--font3-400);
     --font-footer-contacts-content: var(--font1-600);
+    --font-button: var(--font3-400);
+    --font-header-nav-item: var(--font3-400);
+    --font-header-logo: var(--font2-600);
+    --font-header-h1: var(--font1-600);
     
 }
 
@@ -89,30 +102,6 @@ ul,
 li {
     list-style-type: none;
 }
-body {
-    font-size: var(--xxl-font-size);
-}
-@media (max-width: 575px) {
-body {
-    font-size: var(--sm-font-size 16px);
-}
-}
-@media (max-width: 768px) {
-body {
-    font-size: var(--md-font-size 20p);
-}
-}
-@media (max-width: 991px) {
-body {
-    font-size: var(--lg-font-size 24px);
-}
-}
-@media (max-width: 1199px) {
-body {
-    font-size: var(--xl-font-size 28px);
-}
-}
-
 .button_border {
     padding: 6px 20px;
     background-color: transparent;
@@ -143,7 +132,6 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-
 .button {
     background-color: #29CA9C;
     border: none;
@@ -157,16 +145,13 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-
 .button:hover {
     background-color: #29CA9C;
 
 }
-
 .button:active {
     background: linear-gradient(to right, #29CA9C, #1498CA);
 }
-
 .button_disable {
     background-color: #29CA9C80;
     border: none;
@@ -180,7 +165,7 @@ body {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-
+/* ----------------header start-------------------------------------------------------------------------------------------- */
  #header {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/large_bg.webp);
     background-size: cover;
@@ -192,21 +177,20 @@ body {
     border: none; 
     background-color: transparent !important; 
     padding: 0.25rem 0.75rem;
+    margin: 7px 28px 0 0;
 }
+.navbar {
+    transition: all 0.5s;
+}
+.navbar-scrolled {
+    background-color: var(--green2);
+ }
 .headerLogoText {
+    font-family: var(--font-header-logo);
+    font-size: 15px;
     color: var(--text-white); 
-    font-size: 1rem; 
-    line-height: 1.2; 
     text-align: left;
     margin: 25px 0 0 10px;
-}
-nav.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; 
-    padding: 10px 0;
 }
 .navbar-toggler:focus {
     box-shadow: none; 
@@ -215,7 +199,6 @@ nav.navbar {
     background-image: none !important; 
     width: 30px;
     height: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -234,16 +217,14 @@ nav.navbar {
 }
 .headerLogo {
     width: 52px;
-    margin-top: 20px;
+    margin: 20px 0 0 31px;
 }
 .nav-link {
     display: inline-block !important;
 }
 .navbar-nav .nav-link {
-    color: var(--text-white);
-    font-size: 1.5rem; 
-    font-weight: 400;
-    padding: 0.5rem 1rem;
+    font-family: var(--font-header-nav-item);
+    font-size: 24px;
 }
 .navbar-nav .nav-item {
     color: var(--white);
@@ -252,8 +233,8 @@ nav.navbar {
     background: var(--hover);
 } 
 .headerTitle .primary {
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: var(--font1-600);
+    font-size: 36px;
     margin: 478px 150px 66px 150px;
 }
 .navbar-nav .nav-link.active {
@@ -276,16 +257,13 @@ nav.navbar {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
-/* ----------------------------------------------------------------------------------------------------------- */ 
+/* ---------header end------------------------------------------------------------------- */
+/* ---------news start------------------------------------------------------------------- */ 
 .newsCard {
     border-radius: 0;
     overflow: hidden;
     background: #fff;
     transition: transform 0.3s;
-}
-.containerNews {
-    max-width: 1140px;
-    margin: 0 auto;
 }
 .newsCard:hover {
     transform: scale(1.03);
@@ -302,69 +280,26 @@ nav.navbar {
     padding-top: 20px;
 }
 .newsTitle { 
+   font-family: var(--font4-700);
    font-size: 36px;
-   font-weight: bold; 
    color: var(--green2);
    margin: 0;
 }
 .newsAlt {
-    font-weight: bold; 
+    font-family: var(--font4-700);
     font-size: 28px;
     color: var(--green2);
     margin: 0;
 }
 .newsButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 42px;
-    background: var(--green1);
-    color: var(--text-white);
-    border-radius: 0;
-    font-size: 20px;
+    padding: 8px 45px;
 }
 .newsLine {
     width: 100%;
     border-top: 3px solid var(--green1);
     margin: 5px 0 40px 0;
 }
-@media (max-width: 768px) {
-    #header {
-        background: url(../images/smile_bg.webp);
-        background-size: cover;
-        background-position: center;
-    }
-    .navbar-nav {
-        text-align: center;
-    }
-    .navbar-toggler {
-        border: none !important;    
-    }
-    .header-title .primary {
-        font-size: 1.75rem;
-        margin: 478px 0px 10px 0px;
-        background-color: var(--green2);
-        padding: 20px 20px;
-    }
-    .navbar-toggler-icon span {
-        display: block;
-        width: 30px;
-        height: 3px;
-        background-color: var(--green2); 
-    }    
-    .nav-link {
-        display: inline-block;
-    }
-    .headerLogoText {
-        color: var(--text-color-dark);        
-    }
-  
-}
-
-
-
-
+/* ------------news end------------------------------------------------------------------- */
 /* =============================== Footer ======================== */
 .footer {
     background-color: var(--background-footer);
@@ -410,6 +345,48 @@ nav.navbar {
     font-size: 28px;
     transition: color 0.3s ease;
 }
-
-
 /* =============================== Footer end ======================== */
+@media (max-width: 768px) {
+    #header {
+        background: url(../images/smile_bg.webp);
+        background-size: cover;
+        background-position: center;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-toggler {
+        border: none !important;    
+    }
+    .headerTitle .primary {
+        font-size: 18px;
+        margin: 478px 0px 10px 0px;
+        background-color: var(--green2);
+        padding: 20px 20px;
+    }
+    .navbar-toggler-icon span {
+        display: block;
+        width: 32px;
+        height: 3px;
+       background-color: var(--black);
+    } 
+    .headerLine {
+        color: var(--black);
+    }   
+    .nav-link {
+        display: inline-block;
+    }
+    .headerLogoText {
+        color: black;
+    }
+    .newsTitle {
+        font-size: 24px;
+    }
+    .newsAlt {
+        font-size: 18px;
+    }
+  
+}
+
+
+
