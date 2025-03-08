@@ -184,6 +184,14 @@ li {
     min-height: 80px;
 }
 
+.newHeader {
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_page2.webp) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    min-height: 80px !important;
+}
+
 .navbar-toggler {
     border: none;
     background-color: transparent !important;
@@ -321,6 +329,29 @@ li {
 }
 /* ---------header end------------------------------------------------------------------- */
 
+/* ---------description start------------------------------------------------------------------- */
+.descriptionTitle {
+    font-family: var(--font4-700);
+    color: var(--green2);
+    font-size: 36px;
+}
+.descriptionLine {
+    width: 100%;
+    border-top: 3px solid var(--green2);
+    margin: 5px 0 40px 0;
+}
+.descriptionText {
+    font-family: var(--font3-300);
+    font-size: 24px;
+    margin: 5px 0 40px 0;
+}
+.descriptionImages {
+    width: 100%;
+    height: auto;
+    margin: 5px 0 40px 0;
+}
+/* ---------description end------------------------------------------------------------------- */
+
 /* =============================== about us section start ======================== */
 
 .aboutUsTitleFont {
@@ -352,6 +383,7 @@ li {
 }
 
 /* =============================== about us section end ======================== */
+
 /* ---------news start------------------------------------------------------------------- */ 
 .newsCard {
     border-radius: 0;
@@ -374,6 +406,12 @@ li {
     padding-top: 20px;
 }
 .newsTitle { 
+   font-family: var(--font4-700);
+   font-size: 36px;
+   color: var(--green2);
+   margin: 0;
+}
+.newsTitle.newsTitleNew { 
    font-family: var(--font4-700);
    font-size: 36px;
    color: var(--green2);
