@@ -3,23 +3,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const navbarToggler = document.querySelector(".navbar-toggler");
     const navbarCollapse = document.querySelector(".navbar-collapse");
 
-    // Додаємо active до активного пункту
     navLinks.forEach(link => {
         link.addEventListener("click", function () {
             navLinks.forEach(nav => nav.classList.remove("active"));
             this.classList.add("active");
 
-            // Закриваємо бургер-меню після вибору пункту (на мобільних)
             if (window.innerWidth < 992) {
                 navbarCollapse.classList.remove("show");
             }
         });
     });
 
-    // Закриваємо бургер-меню при натисканні поза ним
     document.addEventListener("click", function (event) {
         if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
             navbarCollapse.classList.remove("show");
         }
     });
+});
+ 
+const navEl = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+    if(window.scrollY >= 56) {
+      navEl.classList.add("navbar-scrolled"); 
+    }else if(window.scrollY < 56){
+        navEl.classList.remove("navbar-scrolled");
+    }
 });
