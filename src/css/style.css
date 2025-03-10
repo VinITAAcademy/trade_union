@@ -156,7 +156,7 @@ li {
     transition: background-color 0.3s;
 }
 .button:hover {
-    background-color: #29CA9C;
+    box-shadow: 0px 8px 15px 0px #00000040;
 
 }
 .button:active {
@@ -524,5 +524,55 @@ li {
     /* --------------news end--------------------------------------------------------- */ 
 }
 
+/* =============================== Form start ======================== */
+.contactUsTitleFont {
+    font-family: var(--about-Us-Title-Font);
+    font-size: 36px;
+}
+
+.contactUsContentFont {
+    font-family: var(--about-Us-Content-Font);
+    font-size: 24px;
+}
+
+.formFontTitle {
+    font-family: var(--font1-600);
+    font-size: 24px;
+}
+.formFontContent {
+    font-family: var(--font3-400);
+    font-size: 20px;
+}
+
+.formBorder:hover {
+    border: 2px solid #01363880;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formBorder:focus {
+    background-color: #E6EBEC;   
+}
+
+.required {
+    color: red;
+    padding-left: 4px;
+}
+
+.formButtonFont {
+    font-family: var(--font3-400);
+    font-size: 20px;
+}
+
+.formUnderline {
+    border-bottom: 2px solid var(--green1);
+    padding-bottom: 5px;
+    
+}
+
+.formEmpty {
+    background-color: #FFE6E6;    
+}
+/* =============================== Form end ======================== */
 
 

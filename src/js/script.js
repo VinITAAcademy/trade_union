@@ -29,3 +29,19 @@ window.addEventListener("scroll", () => {
         navEl.classList.remove("navbar-scrolled");
     }
 });
+
+
+// =======================Form start====================
+const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('focus', function() {
+            
+            if (phoneInput.value === '') {
+                phoneInput.value = '+380';
+                phoneInput.classList.add('formEmpty'); 
+            } else {
+                phoneInput.classList.remove('formEmpty');
+            }
+        });        
+    
+// =======================Form emd====================
