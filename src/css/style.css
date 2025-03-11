@@ -379,10 +379,6 @@ li {
     border-radius: 0;
     overflow: hidden;
     background: #fff;
-    transition: transform 0.3s;
-}
-.newsCard:hover {
-    transform: scale(1.03);
 }
 .newsImages {
     width: 100%;
