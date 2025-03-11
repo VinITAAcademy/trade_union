@@ -182,7 +182,7 @@ li {
     width: 100%;
     min-height: 80px;
 }
-.newIntro {
+.newsIntro {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_page2.webp) !important;
     background-size: cover !important;
     background-position: center !important;
