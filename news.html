@@ -22,18 +22,19 @@
     <!--"loader end"-->
 
     <!--"header start"-->
-    <header id="header"class="newHeader">
+    <header id="header">
+        <section class="newsIntro">
         <nav class="navbar navbar-expand-lg fixed-top navbsr-scrolled">
             <div class="container">
                 <a class="navbar-brand d-flex flex-row" href="#">
                     <img class="headerLogo" src="./src/images/LogoMark.webp" alt="Вінницька IT-Академія" width="132">
-                    <span class="headerLogoText d-flex flex-column">
+                    <span class="headerLogoText newsHeaderLogoText d-flex flex-column">
                         <span>Вінницька</span>
                         <span>IT-Академія</span>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon">
+                    <span class="navbarTogglerIcon newsNavbarTogglerIcon">
                         <span class="headerLine"></span>
                         <span class="headerLine"></span>
                         <span class="headerLine"></span>
@@ -41,21 +42,22 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-4">
-                        <li class="nav-item"><a href="index.html" class="nav-link text-white">Головна</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link text-white">Про нас</a></li>
-                        <li class="nav-item"><a href="news.html" class="nav-link text-white active">Новини</a></li>
-                        <li class="nav-item"><a href="doc.html" class="nav-link text-white">Документи</a></li>
-                        <li class="nav-item"><a href="contact.html" class="nav-link text-white">Контакти</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link text-white active">Головна</a></li>
+                        <li class="nav-item"><a href="/about" class="nav-link text-white">Про нас</a></li>
+                        <li class="nav-item"><a href="/news" class="nav-link text-white">Новини</a></li>
+                        <li class="nav-item"><a href="/doc" class="nav-link text-white">Документи</a></li>
+                        <li class="nav-item"><a href="/contact" class="nav-link text-white">Контакти</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="headerTitle text-center text-white py-3">
-            <h1 class="primary">
+        <div class="newsHeaderTitle container container-xl d-flex flex-column align-items-center justify-content-end text-white min-vh-100 pb-3">
+            <h1 class="primary w-100">
                 The Primary Trade Union Organization of the Private Educational<br>
                 Institution “Vocational College Vinnytsia IT Academy”
             </h1>
         </div>
+    </section>
     </header>
     <!-- description start -->
      <div class="containerDescription my-4 ps-5 pe-5">
@@ -137,10 +139,10 @@
                 <div class="col-lg-2 col-md-6 pb-md-4 d-none d-md-block">
                     <div class="row">
                         <ul>
-                            <li class="pt-3"><a class="footerColorTextElement" href="#">Головна</a></li>
-                            <li class="pt-5"><a class="footerColorTextElement" href="#">Про нас</a></li>
-                            <li class="pt-5"><a class="footerColorTextElement" href="#">Новини</a></li>
-                            <li class="pt-5"><a class="footerColorTextElement" href="#">Навчання</a></li>
+                            <li class="pt-3"><a class="footerColorTextElement" href="/">Головна</a></li>
+                            <li class="pt-5"><a class="footerColorTextElement" href="/about">Про нас</a></li>
+                            <li class="pt-5"><a class="footerColorTextElement" href="/news">Новини</a></li>
+                            <li class="pt-5"><a class="footerColorTextElement" href="/study">Навчання</a></li>
                         </ul>
                     </div>
                 </div>
@@ -150,8 +152,8 @@
                         <ul>
                             <li class="pt-3"><a class="footerColorTextElement" href="#">Охорона праці</a></li>
                             <li class="pt-5"><a class="footerColorTextElement" href="#">Правовий захист</a></li>
-                            <li class="pt-5"><a class="footerColorTextElement" href="#">Документи</a></li>
-                            <li class="pt-5"><a class="footerColorTextElement" href="#">Контакти</a></li>
+                            <li class="pt-5"><a class="footerColorTextElement" href="/doc">Документи</a></li>
+                            <li class="pt-5"><a class="footerColorTextElement" href="/contact">Контакти</a></li>
                         </ul>
                     </div>
                 </div>
