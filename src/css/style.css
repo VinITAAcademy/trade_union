@@ -180,7 +180,6 @@ li {
     background-size: cover;
     background-position: center;
     width: 100%;
-    min-height: 80px;
 }
 .newsIntro {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_page2.webp) !important;
@@ -223,7 +222,7 @@ li {
     justify-content: space-between;
 }
 
-.navbar-toggler-icon span {
+.navbarTogglerIcon span {
     display: block;
     width: 30px;
     height: 3px;
@@ -254,8 +253,7 @@ li {
 } 
 .headerTitle .primary {
     font-family: var(--font1-600);
-    font-size: 36px;
-    margin: 478px 150px 66px 150px;
+    font-size: clamp(1.5rem, 4vm, 3rem);
 }
 .navbar-nav .nav-link.active {
     color: var(--text-white) !important;
@@ -292,20 +290,19 @@ li {
         border: none !important;
     }
 
-    .header-title .primary {
-        font-size: 1.75rem;
-        margin: 478px 0px 10px 0px;
+    .headerTitle .primary {
         background-color: var(--green2);
-        padding: 20px 20px;
     }
 
-    .navbar-toggler-icon span {
+    .navbarTogglerIcon span {
         display: block;
         width: 30px;
         height: 3px;
         background-color: var(--green2);
     }
-
+    .newsNavbarTogglerIcon span {
+        background-color: var(--white);
+    }
     .nav-link {
         display: inline-block;
     }
@@ -477,10 +474,11 @@ li {
         border: none !important;    
     }
     .headerTitle .primary {
-        font-size: 18px;
-        margin: 478px 0px 10px 0px;
+        font-size: 24px;
         background-color: var(--green2);
-        padding: 20px 20px;
+    }
+    .newsHeaderTitle .primary {
+        font-size: 24px;
     }
     .navbar-toggler-icon span {
         display: block;
@@ -490,12 +488,18 @@ li {
     } 
     .headerLine {
         color: var(--black);
-    }   
+    } 
+    .newsHeaderLine {
+        color: var(--white);
+    }  
     .nav-link {
         display: inline-block;
     }
     .headerLogoText {
         color: black;
+    }
+    .newsHeaderLogoText {
+        color: var(--text-white);
     }
     /* --------------header end--------------------------------------------------------- */
     /* --------------news start--------------------------------------------------------- */
@@ -506,6 +510,16 @@ li {
         font-size: 18px;
     }
     /* --------------news end--------------------------------------------------------- */ 
+}
+@media (max-width: 520px) {
+     /* -------header start----------------------------------------------- */
+    .headerTitle .primary {
+        font-size: 18px;
+    }
+    .newsHeaderTitle .primary {
+        font-size: 18px;
+    }
+     /* --------------header end--------------------------------------------------------- */
 }
 
 
