@@ -175,16 +175,14 @@ li {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-
-#header {
+.intro {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/large_bg.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
     min-height: 80px;
 }
-
-.newHeader {
+.newsIntro {
     background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_page2.webp) !important;
     background-size: cover !important;
     background-position: center !important;
