@@ -554,7 +554,7 @@ li {
     background-color: #E6EBEC;   
 }
 
-.required {
+.formRequired {
     color: red;
     padding-left: 4px;
 }
@@ -566,12 +566,11 @@ li {
 
 .formUnderline {
     border-bottom: 2px solid var(--green1);
-    padding-bottom: 5px;
-    
+    padding-bottom: 5px;    
 }
 
-.formEmpty {
-    background-color: #FFE6E6;    
+.formInvalid {
+    background-color: #FFE6E6;
 }
 /* =============================== Form end ======================== */
 
