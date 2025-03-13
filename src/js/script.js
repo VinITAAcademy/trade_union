@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    document.addEventListener("click", function (event) {
+    documnt.addEventListener("click", function (event) {
         if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
             navbarCollapse.classList.remove("show");
         }
@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
  
 const navEl = document.querySelector(".navbar");
+const navColor =document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
     if(window.scrollY >= 56) {
       navEl.classList.add("navbar-scrolled"); 
