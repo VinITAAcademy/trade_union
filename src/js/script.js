@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    documnt.addEventListener("click", function (event) {
+    document.addEventListener("click", function (event) {
         if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
             navbarCollapse.classList.remove("show");
         }
