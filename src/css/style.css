@@ -89,6 +89,8 @@
     --font-header-nav-item: var(--font3-400);
     --font-header-logo: var(--font2-600);
     --font-header-h1: var(--font1-600);
+    --text-hover: #01363880;
+
 }
 
 *,
@@ -256,7 +258,7 @@ li {
     font-size: clamp(1.5rem, 4vm, 3rem);
 }
 .navbar-nav .nav-link.active {
-    color: var(--text-white) !important;
+    /* color: var(--text-white); */
     position: relative;
     display: inline-block;
     padding: 8px 16px;
@@ -460,6 +462,56 @@ li {
     transition: color 0.3s ease;
 }
 /* =============================== Footer end ======================== */
+    /* -------all_news start----------------------------------------------- */
+.allNewsHeader {
+    background: var(--white) !important;
+}
+.allNewsNavbarTogglerIcon span {
+    color: var(--green2) !important;
+}
+.allNewsTitle {
+    margin: 100px 0 0 0;
+}
+.allNewsLine {
+    background-color: var(--green2) !important;
+}
+.allNewsLogoText, 
+.allNewsLink, 
+.allNewsLine {
+    color: var(--green2);
+}
+.navbar-scrolled .allNewsLogoText, 
+.navbar-scrolled .allNewsLink, 
+.navbar-scrolled .allNewsLine {
+    color: var(--white) !important;
+    border-color: var(--white) !important; 
+}
+.navbar-scrolled .allNewsLine {
+    background-color: var(--white) !important;
+}
+.allNewsButton {
+    margin: 112px 0;
+    padding: 10px 85px;
+}
+.allNewsPagination {
+    display: flex;
+    align-items: center;
+    font-family: var(--font1-400);
+    font-size: 24px;
+    color: var(--text-color-dark);
+    text-decoration: none;
+    margin: 0 0 112px 0;
+    transition: color 0.3s ease-in-out;
+}
+.allNewsPagination:hover {
+    color: var(--text-hover);
+}
+.allNewsPagination span {
+    margin: 0 10px;
+    font-size: 24px;
+} 
+    /* -------all_news end----------------------------------------------- */
+
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
     #header {
@@ -510,6 +562,19 @@ li {
         font-size: 18px;
     }
     /* --------------news end--------------------------------------------------------- */ 
+     /* --------------all_news start--------------------------------------------------------- */
+     .allNewsLogoText {
+        color: var(--text-white);
+    }
+    .allNewsNavbarNav {
+        color: var(--white);
+    }
+    .allNewsPagination {
+        font-size: 12px;        
+    }
+   
+     /* --------------all_news start--------------------------------------------------------- */
+
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
