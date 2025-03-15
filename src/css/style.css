@@ -462,7 +462,16 @@ li {
     transition: color 0.3s ease;
 }
 /* =============================== Footer end ======================== */
-    /* -------all_news start----------------------------------------------- */
+/* -------contact start----------------------------------------------- */
+.contactBurger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--white);
+}
+/* -------contact end----------------------------------------------- */
+
+/* -------all_news start----------------------------------------------- */
 .allNewsHeader {
     background: var(--white) !important;
 }
