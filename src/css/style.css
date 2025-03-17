@@ -209,7 +209,7 @@ li {
     font-size: 15px;
     color: var(--text-white); 
     text-align: left;
-    margin: 25px 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 .navbar-toggler:focus {
@@ -238,7 +238,6 @@ li {
 }
 .headerLogo {
     width: 52px;
-    margin: 20px 0 0 0;
 }
 .nav-link {
     display: inline-block !important;
