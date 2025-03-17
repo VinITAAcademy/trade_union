@@ -387,7 +387,6 @@ li {
 /* ---------news start------------------------------------------------------------------- */ 
 .newsCard {
     border-radius: 0;
-    overflow: hidden;
     background: #fff;
 }
 .newsImages {
