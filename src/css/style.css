@@ -258,7 +258,6 @@ li {
     font-size: clamp(1.5rem, 4vm, 3rem);
 }
 .navbar-nav .nav-link.active {
-    /* color: var(--text-white); */
     position: relative;
     display: inline-block;
     padding: 8px 16px;
@@ -277,8 +276,14 @@ li {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
+.navbar-scrolled .headerLogoText, 
+.navbar-scrolled .headerLink,  
+.navbar-scrolled .headerLine {
+    color: var(--white) !important;
+    border-color: var(--white) !important; 
+}
 @media (max-width: 768px) {
-    #header {
+    .intro {
         background: url(../images/smile_bg.webp);
         background-size: cover;
         background-position: center;
@@ -302,6 +307,15 @@ li {
         height: 3px;
         background-color: var(--green2);
     }
+    .navbar-scrolled .navbarTogglerIcon span {
+        background-color: var(--white);
+    }
+    .navbar-scrolled .headerLogoText, 
+    .navbar-scrolled .headerLink,  
+    .navbar-scrolled .headerLine {
+        color: var(--white) !important;
+        border-color: var(--white) !important; 
+}
     .newsNavbarTogglerIcon span {
         background-color: var(--white);
     }
@@ -477,12 +491,16 @@ li {
 }
 .allNewsNavbarTogglerIcon span {
     color: var(--green2) !important;
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: var(--green2);
 }
 .allNewsTitle {
     margin: 100px 0 0 0;
 }
 .allNewsLine {
-    background-color: var(--green2) !important;
+    color: var(--green2) !important;
 }
 .allNewsLogoText, 
 .allNewsLink, 
@@ -547,9 +565,6 @@ li {
         height: 3px;
        background-color: var(--black);
     } 
-    .headerLine {
-        color: var(--black);
-    } 
     .newsHeaderLine {
         color: var(--white);
     }  
@@ -572,9 +587,6 @@ li {
     }
     /* --------------news end--------------------------------------------------------- */ 
      /* --------------all_news start--------------------------------------------------------- */
-     .allNewsLogoText {
-        color: var(--text-white);
-    }
     .allNewsNavbarNav {
         color: var(--white);
     }
