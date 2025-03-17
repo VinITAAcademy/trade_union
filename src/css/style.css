@@ -209,7 +209,7 @@ li {
     font-size: 15px;
     color: var(--text-white); 
     text-align: left;
-    margin: 25px 0 0 10px;
+    margin: 0 0 0 10px;
 }
 
 .navbar-toggler:focus {
@@ -238,7 +238,6 @@ li {
 }
 .headerLogo {
     width: 52px;
-    margin: 20px 0 0 0;
 }
 .nav-link {
     display: inline-block !important;
@@ -258,7 +257,6 @@ li {
     font-size: clamp(1.5rem, 4vm, 3rem);
 }
 .navbar-nav .nav-link.active {
-    /* color: var(--text-white); */
     position: relative;
     display: inline-block;
     padding: 8px 16px;
@@ -277,8 +275,14 @@ li {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
 }
+.navbar-scrolled .headerLogoText, 
+.navbar-scrolled .headerLink,  
+.navbar-scrolled .headerLine {
+    color: var(--white) !important;
+    border-color: var(--white) !important; 
+}
 @media (max-width: 768px) {
-    #header {
+    .intro {
         background: url(../images/smile_bg.webp);
         background-size: cover;
         background-position: center;
@@ -302,6 +306,15 @@ li {
         height: 3px;
         background-color: var(--green2);
     }
+    .navbar-scrolled .navbarTogglerIcon span {
+        background-color: var(--white);
+    }
+    .navbar-scrolled .headerLogoText, 
+    .navbar-scrolled .headerLink,  
+    .navbar-scrolled .headerLine {
+        color: var(--white) !important;
+        border-color: var(--white) !important; 
+}
     .newsNavbarTogglerIcon span {
         background-color: var(--white);
     }
@@ -374,7 +387,6 @@ li {
 /* ---------news start------------------------------------------------------------------- */ 
 .newsCard {
     border-radius: 0;
-    overflow: hidden;
     background: #fff;
 }
 .newsImages {
@@ -477,12 +489,16 @@ li {
 }
 .allNewsNavbarTogglerIcon span {
     color: var(--green2) !important;
+    display: block;
+    width: 32px;
+    height: 3px;
+    background-color: var(--green2);
 }
 .allNewsTitle {
     margin: 100px 0 0 0;
 }
 .allNewsLine {
-    background-color: var(--green2) !important;
+    color: var(--green2) !important;
 }
 .allNewsLogoText, 
 .allNewsLink, 
@@ -520,7 +536,27 @@ li {
     font-size: 24px;
 } 
     /* -------all_news end----------------------------------------------- */
-
+ /* -------about start----------------------------------------------- */
+.statistic {
+    font-family: var(--font1-400);
+    font-size: 128px;
+    color: var(--text-color-dark);
+}
+.statisticP {
+    font-family: var(--font1-400);
+    font-size: 46px;
+    color: var(--text-color-dark);
+}
+.statisticBlock {
+    margin: 0 0 100px 0;
+}
+ @media (max-width: 1200px) {
+    .statisticP {
+        max-width: 300px; 
+        white-space: normal; 
+        margin: 0 auto;
+    }
+}
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
     #header {
@@ -547,9 +583,6 @@ li {
         height: 3px;
        background-color: var(--black);
     } 
-    .headerLine {
-        color: var(--black);
-    } 
     .newsHeaderLine {
         color: var(--white);
     }  
@@ -572,9 +605,6 @@ li {
     }
     /* --------------news end--------------------------------------------------------- */ 
      /* --------------all_news start--------------------------------------------------------- */
-     .allNewsLogoText {
-        color: var(--text-white);
-    }
     .allNewsNavbarNav {
         color: var(--white);
     }
@@ -583,6 +613,27 @@ li {
     }
    
      /* --------------all_news start--------------------------------------------------------- */
+     /* --------------statistic start--------------------------------------------------------- */
+       .statistic {
+        font-size: 96px;
+    }
+    .statisticP {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    .border-end {
+        display: none;
+    }
+    .statisticBlock  .col {
+        border-right: none !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    .statisticLine {
+       border-bottom: 2px solid var(--green2) !important;
+    }
+    /* --------------statistic end--------------------------------------------------------- */
+
 
 }
 @media (max-width: 520px) {
@@ -594,6 +645,14 @@ li {
         font-size: 18px;
     }
      /* --------------header end--------------------------------------------------------- */
+     /* --------------statictic start--------------------------------------------------------- */
+       .statistic {
+        font-size: 64px;
+    }
+    .statisticP {
+        font-size: 24px;
+    }
+    /* --------------statictic end--------------------------------------------------------- */
 }
 
 /* =============================== Form start ======================== */
