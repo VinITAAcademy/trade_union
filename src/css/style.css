@@ -258,7 +258,6 @@ li {
     font-size: clamp(1.5rem, 4vm, 3rem);
 }
 .navbar-nav .nav-link.active {
-    /* color: var(--text-white); */
     position: relative;
     display: inline-block;
     padding: 8px 16px;
@@ -520,7 +519,27 @@ li {
     font-size: 24px;
 } 
     /* -------all_news end----------------------------------------------- */
-
+ /* -------about start----------------------------------------------- */
+.statistic {
+    font-family: var(--font1-400);
+    font-size: 128px;
+    color: var(--text-color-dark);
+}
+.pstatistic {
+    font-family: var(--font1-400);
+    font-size: 46px;
+    color: var(--text-color-dark);
+}
+.statisticBlock {
+    margin: 0 0 100px 0;
+}
+ @media (max-width: 1200px) {
+    .pstatistic {
+        max-width: 300px; 
+        white-space: normal; 
+        margin: 0 auto;
+    }
+}
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
     #header {
@@ -583,6 +602,27 @@ li {
     }
    
      /* --------------all_news start--------------------------------------------------------- */
+     /* --------------statistic start--------------------------------------------------------- */
+       .statistic {
+        font-size: 96px;
+    }
+    .pstatistic {
+        font-size: 36px;
+        max-width: 100%;
+    }
+    .border-end {
+        display: none;
+    }
+    .statisticBlock  .col {
+        border-right: none !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    .statisticLine {
+       border-bottom: 2px solid var(--green2) !important;
+    }
+    /* --------------statistic end--------------------------------------------------------- */
+
 
 }
 @media (max-width: 520px) {
@@ -594,6 +634,14 @@ li {
         font-size: 18px;
     }
      /* --------------header end--------------------------------------------------------- */
+     /* --------------statictic start--------------------------------------------------------- */
+       .statistic {
+        font-size: 64px;
+    }
+    .pstatistic {
+        font-size: 24px;
+    }
+    /* --------------statictic end--------------------------------------------------------- */
 }
 
 /* =============================== Form start ======================== */
