@@ -525,7 +525,7 @@ li {
     font-size: 128px;
     color: var(--text-color-dark);
 }
-.pstatistic {
+.statisticP {
     font-family: var(--font1-400);
     font-size: 46px;
     color: var(--text-color-dark);
@@ -534,7 +534,7 @@ li {
     margin: 0 0 100px 0;
 }
  @media (max-width: 1200px) {
-    .pstatistic {
+    .statisticP {
         max-width: 300px; 
         white-space: normal; 
         margin: 0 auto;
@@ -606,7 +606,7 @@ li {
        .statistic {
         font-size: 96px;
     }
-    .pstatistic {
+    .statisticP {
         font-size: 36px;
         max-width: 100%;
     }
@@ -638,7 +638,7 @@ li {
        .statistic {
         font-size: 64px;
     }
-    .pstatistic {
+    .statisticP {
         font-size: 24px;
     }
     /* --------------statictic end--------------------------------------------------------- */
