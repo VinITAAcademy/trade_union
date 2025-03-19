@@ -1,3 +1,5 @@
+    /* -------burgerMenu start----------------------------------------------- */
+
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+    /* -------burgerMenu end----------------------------------------------- */
+    /* -------scrollEvent start----------------------------------------------- */
 
 const navEl = document.querySelector(".navbar");
 const navColor =document.querySelector(".navbar");
@@ -30,7 +34,7 @@ window.addEventListener("scroll", () => {
         navEl.classList.remove("navbar-scrolled");
     }
 });
-
+    /* -------scrollEvent end----------------------------------------------- */
 
 // =======================Form start====================
 const form = document.querySelector(".form");
@@ -125,3 +129,79 @@ const validateForm = (event) => {
     }
 }
 // =======================Form emd====================
+    /* -------history start----------------------------------------------- */
+
+// document.querySelectorAll(".accordion-header").forEach((header) => {
+//     header.addEventListener("click", function () {
+//         const parent = this.parentElement;
+//         const allItems = document.querySelectorAll(".accordion-item");
+
+//         // Закриваємо всі інші акордеони
+//         allItems.forEach((item) => {
+//             if (item !== parent) {
+//                 item.classList.remove("active");
+//                 item.querySelector(".accordion-content").style.display = "none";
+//             }
+//         });
+
+//         // Перемикаємо стан натиснутого акордеону
+//         const content = parent.querySelector(".accordion-content");
+//         const isActive = parent.classList.contains("active");
+
+//         if (isActive) {
+//             content.style.display = "none";
+//             parent.classList.remove("active");
+//         } else {
+//             content.style.display = "block";
+//             parent.classList.add("active");
+//         }
+//     });
+// });
+// try {
+//     document.addEventListener("DOMContentLoaded", function () {
+//         const accordionItems = document.querySelectorAll(".accordion-item");
+
+//         accordionItems.forEach((item) => {
+//             const header = item.querySelector(".accordion-header");
+//             header.addEventListener("click", function () {
+//                 item.classList.toggle("active");
+
+//                 // Закриваємо всі інші акордеони
+//                 accordionItems.forEach((otherItem) => {
+//                     if (otherItem !== item) {
+//                         otherItem.classList.remove("active");
+//                     }
+//                 });
+//             });
+//         });
+//     });
+// } catch (error) {
+//     console.error("Помилка в коді акордеона:", error);
+// }
+
+// document.querySelectorAll(".accordion-header").forEach((header) => {
+//     header.addEventListener("click", function () {
+//         const parent = this.parentElement;
+//         const content = parent.querySelector(".accordion-content");
+//         const allItems = document.querySelectorAll(".accordion-item");
+
+//         // Закриваємо всі інші акордеони
+//         allItems.forEach((item) => {
+//             if (item !== parent) {
+//                 item.classList.remove("active");
+//                 item.querySelector(".accordion-content").style.maxHeight = null;
+//             }
+//         });
+
+//         // Перемикаємо стан натиснутого акордеону
+//         if (parent.classList.contains("active")) {
+//             content.style.maxHeight = null;
+//             parent.classList.remove("active");
+//         } else {
+//             content.style.maxHeight = content.scrollHeight + "px";
+//             parent.classList.add("active");
+//         }
+//     });
+// });
+    /* -------history end----------------------------------------------- */
+
