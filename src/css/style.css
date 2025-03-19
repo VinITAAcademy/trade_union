@@ -625,16 +625,12 @@ li {
 .historyTitle {
     font-family: var(--font1-700);
     font-size: 36px;
+    border-bottom: 2px solid var(--green2);
+    margin: 0 0 46px 0;
 }
 .historyText {
     font-family: var(--font3-400);
     font-size: 28px;
-}
-hr {
-    opacity: unset;
-}
-.historyLine {
-    border-bottom: 2px solid var(--green2); 
 }
 .history {
     margin: 0 0 100px 0;
