@@ -536,15 +536,7 @@ li {
     font-size: 24px;
 } 
     /* -------all_news end----------------------------------------------- */
-/* -------about start----------------------------------------------- */
-
-.aboutIntro {
-    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_about.webp) !important;
-    background-size: cover !important;
-    background-position: center !important;
-    width: 100% !important;
-    margin: 0 0 100px 0;
-}
+ /* -------about start----------------------------------------------- */
 .statistic {
     font-family: var(--font1-400);
     font-size: 128px;
@@ -565,8 +557,6 @@ li {
         margin: 0 auto;
     }
 }
-    /* -------about end----------------------------------------------- */
-
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
     #header {
@@ -715,4 +705,46 @@ li {
 }
 /* =============================== Form end ======================== */
 
+/* =============================== Footer start ======================== */
 
+.foterButton:hover {
+    background-color: var(--hover);
+    color: var(--text-white);
+    border: none;
+
+} 
+
+.foterButton {
+    padding: 2px;
+    background-color: transparent;
+    color: var(--text-white);   
+    border-radius: 4px;    
+    cursor: pointer;
+    display: block;
+    width: 200px;
+}
+
+.foterButton:active::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: 4px;
+    background: var(--gradient1);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+.foterButton:active {
+    position: relative;
+}
+
+.footerLink {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* =============================== Footer end ======================== */
