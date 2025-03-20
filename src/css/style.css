@@ -550,12 +550,106 @@ li {
 .statisticBlock {
     margin: 0 0 100px 0;
 }
+    /* -------about end----------------------------------------------- */
+    /* -------history start----------------------------------------------- */
+
+.accordion-container {
+    width: 100%;
+}
+.historyNumber {
+    display: flex;
+    gap: 10px; 
+    align-items: flex-start;
+}
+
+.number {
+    min-width: 30px; 
+    text-align: right; 
+}
+.history2019 { 
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/history2019.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%;    
+}
+.history2020 {
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/history2020.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+}
+.history2021 {
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_page2.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+}
+.history2023 {
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/history2023.webp);
+    background-size: cover;
+    background-position: center;
+    width: 100%; 
+}
+.accordion-header {
+    font-family: var(--font1-700);
+    font-size: 36px;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid var(--green2);
+}
+.accordion-header:hover {
+    border: 2px solid var(--green1); 
+}
+
+.accordion-item.active .accordion-header {
+    border: 2px solid var(--green1); 
+}
+.accordion-item:not(.active) .accordion-header {
+    border: 2px solid transparent; 
+    border-bottom: 2px solid var(--green2);
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 10px;
+}
+.historyTitle {
+    font-family: var(--font1-700);
+    font-size: 36px;
+    border-bottom: 2px solid var(--green2);
+    margin: 0 0 46px 0;
+}
+.historyText {
+    font-family: var(--font3-400);
+    font-size: 28px;
+}
+.history {
+    margin: 0 0 100px 0;
+}
+    /* -------history end----------------------------------------------- */
+
  @media (max-width: 1200px) {
+   /* --------------statistic start--------------------------------------------------------- */
     .statisticP {
         max-width: 300px; 
         white-space: normal; 
         margin: 0 auto;
     }
+    /* --------------statistic end--------------------------------------------------------- */
+    /* --------------history start--------------------------------------------------------- */
+
+    .historyText {
+        font-size: 20px;
+    }
+    .historyTitle {
+        font-size: 28px;
+    }
+    .accordion-header {
+        font-size: 28px;
+    }
+    /* --------------history end--------------------------------------------------------- */
+
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -633,6 +727,18 @@ li {
        border-bottom: 2px solid var(--green2) !important;
     }
     /* --------------statistic end--------------------------------------------------------- */
+    /* --------------history start--------------------------------------------------------- */
+
+    .historyText {
+        font-size: 14px;
+    }
+    .historyTitle {
+        font-size: 24px;
+    }
+    .accordion-header {
+        font-size: 18px;
+    }
+    /* --------------history end--------------------------------------------------------- */
 
 
 }
@@ -653,6 +759,18 @@ li {
         font-size: 24px;
     }
     /* --------------statictic end--------------------------------------------------------- */
+    /* --------------history start--------------------------------------------------------- */
+    .historyText {
+        font-size: 12px;
+    }
+    .historyTitle {
+        font-size: 18px;
+    }
+    .accordion-header {
+        font-size: 12px;
+    }
+        /* --------------history end--------------------------------------------------------- */
+
 }
 
 /* =============================== Form start ======================== */
