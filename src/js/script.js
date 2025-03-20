@@ -1,3 +1,5 @@
+    /* -------burgerMenu start----------------------------------------------- */
+
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".nav-link");
     const navbarToggler = document.querySelector(".navbar-toggler");
@@ -20,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+    /* -------burgerMenu end----------------------------------------------- */
+    /* -------scrollEvent start----------------------------------------------- */
 
 const navEl = document.querySelector(".navbar");
 const navColor =document.querySelector(".navbar");
@@ -30,7 +34,7 @@ window.addEventListener("scroll", () => {
         navEl.classList.remove("navbar-scrolled");
     }
 });
-
+    /* -------scrollEvent end----------------------------------------------- */
 
 // =======================Form start====================
 const form = document.querySelector(".form");
@@ -125,3 +129,4 @@ const validateForm = (event) => {
     }
 }
 // =======================Form emd====================
+
