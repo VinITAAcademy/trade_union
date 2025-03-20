@@ -35,13 +35,39 @@ window.addEventListener("scroll", () => {
 // =======================Form start====================
 const form = document.querySelector(".form");
 const inputFields = form.getElementsByClassName("formControl");
+const submitButton = document.querySelector(".formSubmitButton");
 
 for (const item of inputFields) {
     item.addEventListener('blur', (event) => {
-        console.log("hello");
         validateForm(event);
     });
-};
+}
+
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    let isFormValid = true;
+
+    for (const item of inputFields) {
+        if (item.id === "first-name") {
+            validateName(item);
+        } else if (item.id === "last-name") {
+            validateLastName(item);
+        } else if (item.id === "phone") {
+            validatePhone(item);
+        } else if (item.id === "email") {
+            validateEmail(item);
+        }
+
+        if (item.classList.contains("formInvalid")) {
+            isFormValid = false;
+        }
+    }
+
+    if (isFormValid) {
+        alert("Форма успішно відправлена!");
+        // form.submit(); // Розкоментувати для відправки форми
+    }
+});
 
 const setError = (element, message) => {
     const errorSection = element.parentElement.querySelector(".error");
@@ -73,9 +99,9 @@ const validateLastName = (lastNameField) => {
     const regex = /[A-Za-zА-Яа-яЁё\s]+/;
 
     if (lastNameField.value === "") {
-        setError(lastNameField, "Name is required");
+        setError(lastNameField, "Last name is required");
     } else if (!regex.test(lastNameField.value)) {
-        setError(lastNameField, "Name is incorrect");
+        setError(lastNameField, "Last name is incorrect");
     } else {
         setValid(lastNameField);
     }
@@ -86,7 +112,6 @@ const validatePhone = (phoneField) => {
 
     if (phoneField.value === "") {
         phoneField.value = '+380';
-        //   setError(phoneField, "Phone is required");
     } else if (!regex.test(phoneField.value)) {
         setError(phoneField, "Phone is incorrect");
     } else {
@@ -123,5 +148,5 @@ const validateForm = (event) => {
         default:
             alert("Validation error!");
     }
-}
+};
 // =======================Form emd====================
