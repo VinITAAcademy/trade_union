@@ -13,3 +13,14 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".team-slider", {
+        slidesPerView: 2.5, 
+        centeredSlides: false, 
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-next",
+            prevEl: ".swiper-prev",
+        }
+    });
+});
