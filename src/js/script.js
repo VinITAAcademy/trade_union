@@ -1,30 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     var swiper = new Swiper(".team-slider", {
-//         slidesPerView: 2.5, 
-//         centeredSlides: false, 
-//         loop: true,
-//         navigation: {
-//             nextEl: ".swiper-next",
-//             prevEl: ".swiper-prev",
-//         }
-//     });
-// });
-
-
-
-
-// const navEl = document.querySelector(".navbar");
-// const navColor =document.querySelector(".navbar");
-// window.addEventListener("scroll", () => {
-//     if (window.scrollY >= 56) {
-//         navEl.classList.add("navbar-scrolled");
-//     } else if (window.scrollY < 56) {
-//         navEl.classList.remove("navbar-scrolled");
-//     }
-// });
- 
-    /* -------burgerMenu start----------------------------------------------- */
-
+/* -------burgerMenu start----------------------------------------------- */
     document.addEventListener("DOMContentLoaded", function () {
         const navLinks = document.querySelectorAll(".nav-link");
         const navbarToggler = document.querySelector(".navbar-toggler");
