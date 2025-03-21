@@ -550,65 +550,6 @@ li {
 .statisticBlock {
     margin: 0 0 100px 0;
 }
-<<<<<<< HEAD
- /* -------about end----------------------------------------------- */
- /* -------team start----------------------------------------------- */
-.team-title {
-    border-bottom: 2px solid var(--green1);
-}
-.team-slider {
-    width: 80%;
-}
-.swiper-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-.swiper-slide {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    transition: all 0.5s ease;
-}
-.team-photo {
-    width: 396px;
-    height: 480px;
-    transition: all 0.5s ease-in-out;
-    filter: blur(2px); 
-    opacity: 0.5;
-    transform: scale(0.9);
-}
-.swiper-slide-active .team-photo {
-    filter: blur(0); 
-    opacity: 1;
-    transform: scale(1.1); 
-}
-.swiper {
-    margin: 0;
-}
-.teamPosition {
-   margin: 20px 0 0 60px;
-   font-family: var(--font1-700);
-   font-size: 28px;
-}
-.teamName {
-    margin: 10px 0 20px 114px;
-    font-family: var(--font1-600);
-    font-size: 28px;
-}
-.teamSecretary {
-    margin: 10px 0 0 129px;
-    font-family: var(--font1-700);
-    font-size: 28px;
- }
-.swiper-button-next, 
-.swiper-button-prev {
-    color: var(--green1);
-}
- /* -------team end----------------------------------------------- */
- @media (max-width: 1200px) {
- /* -------statistic start----------------------------------------------- */
-.statisticP {
-=======
     /* -------about end----------------------------------------------- */
     /* -------history start----------------------------------------------- */
 
@@ -691,32 +632,10 @@ li {
  @media (max-width: 1200px) {
    /* --------------statistic start--------------------------------------------------------- */
     .statisticP {
->>>>>>> develop
         max-width: 300px; 
         white-space: normal; 
         margin: 0 auto;
     }
-<<<<<<< HEAD
- /* -------statistic end----------------------------------------------- */
-/* -------team start----------------------------------------------- */
-.team-photo {
-    width: 220px;
-    height: 280px;
-}
-.teamPosition {
-    margin: 20px 0 0 37px;
-    font-size: 14px;
- }
- .teamName {
-     margin: 10px 0 20px 64px;
-     font-size: 14px;
- }
- .teamSecretary {
-    margin: 10px 0 0 70px;
-    font-size: 14px;
- }
- /* -------team end----------------------------------------------- */
-=======
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
     .newsTitle {
@@ -740,7 +659,6 @@ li {
         font-size: 28px;
     }
     /* --------------history end--------------------------------------------------------- */
->>>>>>> develop
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -818,26 +736,6 @@ li {
        border-bottom: 2px solid var(--green2) !important;
     }
     /* --------------statistic end--------------------------------------------------------- */
-<<<<<<< HEAD
-    /* -------team start----------------------------------------------- */
-    .team-photo {
-        width: 170px;
-        height: 230px;
-    }
-    .teamPosition {
-        margin: 10px 0 0 9px;
-        font-size: 14px;
-     }
-     .teamName {
-         margin: 10px 0 20px 39px;
-         font-size: 14px;
-     }
-     .teamSecretary {
-        margin: 10px 0 0 48px;
-        font-size: 14px;
-     }
- /* -------team end----------------------------------------------- */
-=======
     /* --------------history start--------------------------------------------------------- */
 
     .historyText {
@@ -852,7 +750,6 @@ li {
     /* --------------history end--------------------------------------------------------- */
 
 
->>>>>>> develop
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -871,26 +768,6 @@ li {
         font-size: 24px;
     }
     /* --------------statictic end--------------------------------------------------------- */
-<<<<<<< HEAD
-    /* -------team start----------------------------------------------- */
-    .team-photo {
-        width: 120px;
-        height: 180px;
-    }
-    .teamPosition {
-        margin: 10px 0 0 0;
-        font-size: 10px;
-     }
-     .teamName {
-         margin: 10px 0 20px 27px;
-         font-size: 10px;
-     }
-     .teamSecretary {
-        margin: 10px 0 0 36px;
-        font-size: 10px;
-     }
-    /* -------team start----------------------------------------------- */
-=======
     /* --------------history start--------------------------------------------------------- */
     .historyText {
         font-size: 12px;
@@ -903,7 +780,6 @@ li {
     }
         /* --------------history end--------------------------------------------------------- */
 
->>>>>>> develop
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
