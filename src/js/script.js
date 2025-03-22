@@ -126,7 +126,5 @@
             default:
                 alert("Validation error!");
         }
-    }
-    // =======================Form emd====================
-    
-    
+    };
+ 
