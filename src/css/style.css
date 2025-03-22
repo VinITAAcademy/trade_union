@@ -535,8 +535,15 @@ li {
     margin: 0 10px;
     font-size: 24px;
 } 
-    /* -------all_news end----------------------------------------------- */
+/* -------all_news end----------------------------------------------- */
  /* -------about start----------------------------------------------- */
+ .aboutIntro {
+    background: linear-gradient(270.11deg, rgba(102, 102, 102, 0) -13.55%, #000000 107.12%), url(../images/bg_about.webp) !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100% !important;
+    margin: 0 0 100px 0;
+}
 .statistic {
     font-family: var(--font1-400);
     font-size: 128px;
@@ -628,7 +635,57 @@ li {
     margin: 0 0 100px 0;
 }
     /* -------history end----------------------------------------------- */
-
+    /* -------team start----------------------------------------------- */
+    .team-title {
+        font-size: 36px;
+        font-family: var(--font1-700);
+        margin-bottom: 20px;
+        border-bottom: 2px solid var(--green1);
+    }
+    
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+    }
+    
+    .team-photo {
+        width: 396px;
+        height: 480px;
+        transition: all 0.5s ease-in-out;
+        filter: blur(2px); 
+        opacity: 0.5;
+        transform: scale(0.9);
+    }
+    
+    .swiper-slide-active .team-photo {
+        filter: blur(0); 
+        opacity: 1;
+        transform: scale(1.1); 
+    }
+    
+    .teamPosition {
+        margin: 20px 0 0 0;
+        font-size: 28px;
+        font-family: var(--font1-700);
+    }
+    .teamName {
+        margin: 10px 0 100px 0;
+        font-size: 28px;
+        font-family: var(--font1-600);
+    }
+    .team-slider .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+    }
+    /* -------team end----------------------------------------------- */
  @media (max-width: 1200px) {
    /* --------------statistic start--------------------------------------------------------- */
     .statisticP {
@@ -659,6 +716,19 @@ li {
         font-size: 28px;
     }
     /* --------------history end--------------------------------------------------------- */
+    /* --------------team start-------------------------------------------------------- */
+    .team-photo {
+        width: 220px;
+        height: 280px;
+    }
+    .teamPosition {
+        font-size: 24px;
+    }
+    .teamName {
+        margin: 10px 0 75px 0;
+        font-size: 24px;
+    }
+     /* --------------team end--------------------------------------------------------- */
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -748,8 +818,22 @@ li {
         font-size: 18px;
     }
     /* --------------history end--------------------------------------------------------- */
-
-
+     /* --------------team start-------------------------------------------------------- */
+     .team-title {
+        font-size: 24px;
+    }
+     .team-photo {
+        width: 170px;
+        height: 230px;
+    }
+    .teamPosition {
+        font-size: 14px;
+    }
+    .teamName {
+        margin: 10px 0 50px 0;
+        font-size: 14px;
+    }
+     /* --------------team end--------------------------------------------------------- */
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -773,15 +857,25 @@ li {
         font-size: 12px;
     }
     .historyTitle {
-        font-size: 18px;
+        font-size: 24px;
     }
     .accordion-header {
         font-size: 12px;
     }
         /* --------------history end--------------------------------------------------------- */
-
+      /* --------------team start-------------------------------------------------------- */
+      .team-photo {
+        width: 120px;
+        height: 180px;
+    }
+    .teamPosition {
+        font-size: 10px;
+    }
+    .teamName {
+        font-size: 10px;
+    }
+     /* --------------team end--------------------------------------------------------- */
 }
-
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
     font-family: var(--about-Us-Title-Font);
