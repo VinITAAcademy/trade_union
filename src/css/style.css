@@ -52,6 +52,13 @@
     font-style: normal;
     line-height: normal;
 }
+@font-face {
+    font-family: "Segoe-UI-This";
+    src: url('../assets/fonts/Segoe\ UI\ This.ttf') format('truetype');
+    font-size: 400;
+    font-style: normal;
+    line-height: normal;
+}
 
 :root {
     --gradient1: linear-gradient(90deg, #29CA9C 0%, #1498CA 100%);
@@ -79,6 +86,7 @@
     --font3-400: 'Inter_18pt-Regular';
     --font3-300: 'Inter_18pt-Light';
     --font4-700: "Segoe-UI This Bold";
+    --font5-400: "Segoe-UI-This";
     --font-footer-contacts-title: var(--font3-400);
     --font-footer-contacts-content: var(--font1-600);
     --gradient2: linear-gradient(180deg, #29CA9C 0%, #1498CA 100%);
@@ -545,12 +553,12 @@ li {
     margin: 0 0 100px 0;
 }
 .statistic {
-    font-family: var(--font1-400);
+    font-family: var(--font5-400);
     font-size: 128px;
     color: var(--text-color-dark);
 }
 .statisticP {
-    font-family: var(--font1-400);
+    font-family: var(--font5-400);
     font-size: 46px;
     color: var(--text-color-dark);
 }
@@ -692,6 +700,10 @@ li {
         max-width: 300px; 
         white-space: normal; 
         margin: 0 auto;
+        font-size: 38px;
+    }
+    .statistic {
+        font-size: 98px;
     }
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
@@ -788,7 +800,7 @@ li {
      /* --------------all_news start--------------------------------------------------------- */
      /* --------------statistic start--------------------------------------------------------- */
        .statistic {
-        font-size: 96px;
+        font-size: 74px;
     }
     .statisticP {
         font-size: 36px;
@@ -846,7 +858,7 @@ li {
      /* --------------header end--------------------------------------------------------- */
      /* --------------statictic start--------------------------------------------------------- */
        .statistic {
-        font-size: 64px;
+        font-size: 56px;
     }
     .statisticP {
         font-size: 24px;
