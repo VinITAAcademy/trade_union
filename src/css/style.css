@@ -656,7 +656,6 @@ li {
     
     .team-photo {
         width: 396px;
-        height: 480px;
         transition: all 0.5s ease-in-out;
         filter: blur(2px); 
         opacity: 0.5;
@@ -719,7 +718,6 @@ li {
     /* --------------team start-------------------------------------------------------- */
     .team-photo {
         width: 220px;
-        height: 280px;
     }
     .teamPosition {
         font-size: 24px;
@@ -824,7 +822,6 @@ li {
     }
      .team-photo {
         width: 170px;
-        height: 230px;
     }
     .teamPosition {
         font-size: 14px;
@@ -866,7 +863,6 @@ li {
       /* --------------team start-------------------------------------------------------- */
       .team-photo {
         width: 120px;
-        height: 180px;
     }
     .teamPosition {
         font-size: 10px;
