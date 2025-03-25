@@ -379,7 +379,7 @@ li {
 
 .aboutUsButtonFont {
     font-family: var(--about-Us-Content-Font);
-    font-size: 20px;
+    
 }
 
 /* =============================== about us section end ======================== */
@@ -834,6 +834,15 @@ li {
         font-size: 14px;
     }
      /* --------------team end--------------------------------------------------------- */
+      /* --------------about us start--------------------------------------------------------- */
+    .aboutUsTitleFont,
+    .aboutUsFontNumber {
+        font-size: 24px !important;
+    }
+    .aboutUsContentFont {
+        font-size: 18px !important;
+    }
+     /* --------------about us end--------------------------------------------------------- */
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -875,6 +884,15 @@ li {
         font-size: 10px;
     }
      /* --------------team end--------------------------------------------------------- */
+     /* --------------about us start--------------------------------------------------------- */
+    .aboutUsTitleFont,
+    .aboutUsFontNumber {
+        font-size: 24px !important;
+    }
+    .aboutUsContentFont {
+        font-size: 18px !important;
+    }
+     /* --------------about us end--------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
