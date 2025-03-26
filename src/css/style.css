@@ -732,10 +732,10 @@ li {
      /* --------------about us start--------------------------------------------------------- */
     .aboutUsTitleFont,
     .aboutUsFontNumber {
-        font-size: 24px !important;
+        font-size: 24px;
     }
     .aboutUsContentFont {
-        font-size: 18px !important;
+        font-size: 18px;
     }
      /* --------------about us end--------------------------------------------------------- */
 }
@@ -842,16 +842,7 @@ li {
         margin: 10px 0 50px 0;
         font-size: 14px;
     }
-     /* --------------team end--------------------------------------------------------- */
-      /* --------------about us start--------------------------------------------------------- */
-    .aboutUsTitleFont,
-    .aboutUsFontNumber {
-        font-size: 24px !important;
-    }
-    .aboutUsContentFont {
-        font-size: 18px !important;
-    }
-     /* --------------about us end--------------------------------------------------------- */
+     /* --------------team end--------------------------------------------------------- */    
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -892,16 +883,7 @@ li {
     .teamName {
         font-size: 10px;
     }
-     /* --------------team end--------------------------------------------------------- */
-     /* --------------about us start--------------------------------------------------------- */
-    .aboutUsTitleFont,
-    .aboutUsFontNumber {
-        font-size: 24px !important;
-    }
-    .aboutUsContentFont {
-        font-size: 18px !important;
-    }
-     /* --------------about us end--------------------------------------------------------- */
+     /* --------------team end--------------------------------------------------------- */    
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
