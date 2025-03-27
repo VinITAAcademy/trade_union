@@ -893,8 +893,7 @@ li {
 }
 
 .formButtonFont {
-    font-family: var(--font3-400);
-    /* font-size: 20px; */
+    font-family: var(--font3-400);   
 }
 
 .formUnderline {
