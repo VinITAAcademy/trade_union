@@ -770,6 +770,16 @@ li {
         font-size: 22px;
     }
     /* --------------contact end--------------------------------------------------------- */
+ /* --------------form start--------------------------------------------------------- */
+     .contactUsTitleFont,
+     .formFontTitle {       
+        font-size: 24px !important;
+    }
+    .contactUsContentFont,
+    .formFontContent {
+        font-size: 18px !important;
+    } 
+    /* --------------form end--------------------------------------------------------- */
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -859,6 +869,7 @@ li {
         font-size: 14px;
     }
      /* --------------team end--------------------------------------------------------- */
+     
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -902,8 +913,8 @@ li {
      /* --------------team end--------------------------------------------------------- */
 
     /* --------------about start-------------------------------------------------------- */
-     .min-vh-100 {
-        min-height: 72vh !important;
+    .min-vh-100 {
+       min-height: 72vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
 
@@ -961,8 +972,7 @@ li {
 }
 
 .formButtonFont {
-    font-family: var(--font3-400);
-    font-size: 20px;
+    font-family: var(--font3-400);   
 }
 
 .formUnderline {
