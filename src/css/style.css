@@ -518,23 +518,6 @@ li {
     margin: 112px 0;
     padding: 10px 85px;
 }
-.allNewsPagination {
-    display: flex;
-    align-items: center;
-    font-family: var(--font1-400);
-    font-size: 24px;
-    color: var(--text-color-dark);
-    text-decoration: none;
-    margin: 0 0 112px 0;
-    transition: color 0.3s ease-in-out;
-}
-.allNewsPagination:hover {
-    color: var(--text-hover);
-}
-.allNewsPagination span {
-    margin: 0 10px;
-    font-size: 24px;
-} 
 /* -------all_news end----------------------------------------------- */
  /* -------about start----------------------------------------------- */
  .aboutIntro {
@@ -656,7 +639,6 @@ li {
     
     .team-photo {
         width: 396px;
-        height: 480px;
         transition: all 0.5s ease-in-out;
         filter: blur(2px); 
         opacity: 0.5;
@@ -751,7 +733,6 @@ li {
     /* --------------team start-------------------------------------------------------- */
     .team-photo {
         width: 220px;
-        height: 280px;
     }
     .teamPosition {
         font-size: 24px;
@@ -778,6 +759,16 @@ li {
         font-size: 22px;
     }
     /* --------------contact end--------------------------------------------------------- */
+ /* --------------form start--------------------------------------------------------- */
+     .contactUsTitleFont,
+     .formFontTitle {       
+        font-size: 24px !important;
+    }
+    .contactUsContentFont,
+    .formFontContent {
+        font-size: 18px !important;
+    } 
+    /* --------------form end--------------------------------------------------------- */
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -829,11 +820,7 @@ li {
      /* --------------all_news start--------------------------------------------------------- */
     .allNewsNavbarNav {
         color: var(--white);
-    }
-    .allNewsPagination {
-        font-size: 12px;        
-    }
-   
+    }   
      /* --------------all_news start--------------------------------------------------------- */
      /* --------------statistic start--------------------------------------------------------- */
        .statistic {
@@ -842,17 +829,6 @@ li {
     .statisticP {
         font-size: 36px;
         max-width: 100%;
-    }
-    .border-end {
-        display: none;
-    }
-    .statisticBlock  .col {
-        border-right: none !important;
-        display: block !important;
-        visibility: visible !important;
-    }
-    .statisticLine {
-       border-bottom: 2px solid var(--green2) !important;
     }
     /* --------------statistic end--------------------------------------------------------- */
     /* --------------history start--------------------------------------------------------- */
@@ -873,7 +849,6 @@ li {
     }
      .team-photo {
         width: 170px;
-        height: 230px;
     }
     .teamPosition {
         font-size: 14px;
@@ -883,6 +858,7 @@ li {
         font-size: 14px;
     }
      /* --------------team end--------------------------------------------------------- */
+     
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -898,6 +874,7 @@ li {
         font-size: 64px;
     }
     .statisticP {
+        max-width: 190px;
         font-size: 24px;
     }
     /* --------------statictic end--------------------------------------------------------- */
@@ -915,7 +892,6 @@ li {
       /* --------------team start-------------------------------------------------------- */
       .team-photo {
         width: 120px;
-        height: 180px;
     }
     .teamPosition {
         font-size: 10px;
@@ -940,6 +916,11 @@ li {
         padding: 20px 0 0 0;
         font-size: 14px;
     }
+    /* --------------about start-------------------------------------------------------- */
+    .min-vh-100 {
+       min-height: 72vh !important;
+    }
+    /* --------------about end-------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
@@ -977,8 +958,7 @@ li {
 }
 
 .formButtonFont {
-    font-family: var(--font3-400);
-    font-size: 20px;
+    font-family: var(--font3-400);   
 }
 
 .formUnderline {
@@ -1034,3 +1014,4 @@ li {
 }
 
 /* =============================== Footer end ======================== */
+
