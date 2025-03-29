@@ -793,11 +793,11 @@ li {
  /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
      .formFontTitle {       
-        font-size: 24px;
+        font-size: 24px !important;
     }
     .contactUsContentFont,
     .formFontContent {
-        font-size: 18px;
+        font-size: 18px !important;
     } 
     /* --------------form end--------------------------------------------------------- */
 }
