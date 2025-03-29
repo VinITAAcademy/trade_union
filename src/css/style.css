@@ -333,7 +333,7 @@ li {
 .descriptionTitle {
     font-family: var(--font4-700);
     color: var(--green2);
-    font-size: 36px;
+    font-size: 24px;
 }
 .descriptionLine {
     width: 100%;
@@ -342,7 +342,7 @@ li {
 }
 .descriptionText {
     font-family: var(--font3-300);
-    font-size: 24px;
+    font-size: 20px;
     margin: 5px 0 40px 0;
 }
 .descriptionImages {
@@ -721,10 +721,10 @@ li {
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
     .newsTitle {
-        font-size: 24px;
+        font-size: 28px;
     }
     .newsAlt {
-        font-size: 18px;
+        font-size: 23px;
     }
     /* -------news end----------------------------------------------- */
 
@@ -751,6 +751,9 @@ li {
     .teamName {
         margin: 10px 0 75px 0;
         font-size: 24px;
+    }
+    .team-title {
+        font-size: 32px;
     }
     
      /* --------------team end--------------------------------------------------------- */
@@ -815,7 +818,7 @@ li {
         border: none !important;    
     }
     .headerTitle .primary {
-        font-size: 24px;
+        font-size: 20px;
         background-color: var(--green2);
     }
     .newsHeaderTitle .primary {
@@ -865,13 +868,13 @@ li {
     /* --------------history start--------------------------------------------------------- */
 
     .historyText {
-        font-size: 14px;
+        font-size: 20px;
     }
     .historyTitle {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 18px;
+        font-size: 22px;
     }
     /* --------------history end--------------------------------------------------------- */
      /* --------------team start-------------------------------------------------------- */
@@ -882,11 +885,11 @@ li {
         width: 170px;
     }
     .teamPosition {
-        font-size: 14px;
+        font-size: 20px;
     }
     .teamName {
         margin: 10px 0 50px 0;
-        font-size: 14px;
+        font-size: 20px;
     }
 
      /* --------------team end--------------------------------------------------------- */     
@@ -895,7 +898,7 @@ li {
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
     .headerTitle .primary {
-        font-size: 18px;
+        font-size: 16px;
     }
     .newsHeaderTitle .primary {
         font-size: 18px;
@@ -912,13 +915,13 @@ li {
     /* --------------statictic end--------------------------------------------------------- */
     /* --------------history start--------------------------------------------------------- */
     .historyText {
-        font-size: 12px;
+        font-size: 16px;
     }
     .historyTitle {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 12px;
+        font-size: 16px;
     }
         /* --------------history end--------------------------------------------------------- */
       /* --------------team start-------------------------------------------------------- */
@@ -926,10 +929,10 @@ li {
         width: 120px;
     }
     .teamPosition {
-        font-size: 10px;
+        font-size: 16px;
     }
     .teamName {
-        font-size: 10px;
+        font-size: 16px;
 
     }    
 
@@ -937,7 +940,7 @@ li {
 
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
-       min-height: 72vh !important;
+       min-height: 97vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
 
@@ -947,16 +950,33 @@ li {
     }
      .contactData {
         margin: 5px 0 8px 0;
-        font-size: 14px;
+        font-size: 20px;
     }
     .contactP {
         margin: 0 0 5px 0;
-        font-size: 12px;
+        font-size: 16px;
     }
     .contactDataGap {
         padding: 20px 0 0 0;
-        font-size: 14px;
+        font-size: 16px;
     }
+    /* -------news start----------------------------------------------- */
+       .newsTitle {
+        font-size: 20px;
+    }
+    .newsAlt {
+        font-size: 16px;
+    }
+    /* -------description start----------------------------------------------- */
+    .descriptionTitle {
+        font-size: 20px;
+    }
+    .descriptionText {
+        font-size: 16px;
+    }
+    
+    /* -------description end----------------------------------------------- */
+    /* -------news end----------------------------------------------- */
 
 }
 /* =============================== Form start ======================== */
