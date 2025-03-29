@@ -474,15 +474,6 @@ li {
     transition: color 0.3s ease;
 }
 /* =============================== Footer end ======================== */
-/* -------contact start----------------------------------------------- */
-.contactBurger span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--white);
-}
-/* -------contact end----------------------------------------------- */
-
 /* -------all_news start----------------------------------------------- */
 .allNewsHeader {
     background: var(--white) !important;
@@ -699,6 +690,26 @@ li {
     .contactInfoLink {
         color: var(--green2);
     }
+    .contactLogo,
+    .contactLine,
+    .contactLink {
+        color: var(--green2);
+    }
+    .contactBurger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--green2);
+    }
+    .navbar-scrolled .contactLogo, 
+    .navbar-scrolled .contactLine, 
+    .navbar-scrolled .contactLink {
+        color: var(--white) !important;
+        border-color: var(--white) !important; 
+    }
+    .navbar-scrolled .contactLine {
+        background-color: var(--white) !important;
+    }
     /* -------contact end----------------------------------------------- */
  @media (max-width: 1200px) {
    /* --------------statistic start--------------------------------------------------------- */
@@ -741,6 +752,14 @@ li {
         margin: 10px 0 75px 0;
         font-size: 24px;
     }
+    
+     /* --------------team end--------------------------------------------------------- */
+     .footer {
+        font-size: 24px;
+     }
+     .footerConteinerRightFont {
+        font-size: 24px;
+     }
      /* --------------team end--------------------------------------------------------- */
      /* --------------contact start--------------------------------------------------------- */
     .contactTitle {
@@ -900,6 +919,12 @@ li {
         font-size: 10px;
     }
      /* --------------team end--------------------------------------------------------- */
+
+    /* --------------about start-------------------------------------------------------- */
+    .min-vh-100 {
+       min-height: 72vh !important;
+    }
+    /* --------------about end-------------------------------------------------------- */
      /* --------------contactinfo start--------------------------------------------------------- */
      .contactTitle {
         font-size: 24px;
