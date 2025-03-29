@@ -12,35 +12,64 @@
 </head>
 <body>
     <!--"header start"-->
-    <header id="header">
+    <header id="headerContact">
         <nav class="navbar navbar-expand-lg fixed-top navbar-scrolled text-white">
             <div class="container container-xl">
                 <a class="navbar-brand d-flex flex-row" href="#">
                     <img class="headerLogo" src="./src/images/LogoMark.webp" alt="Вінницька IT-Академія" width="132">
-                    <span class="headerLogoText  d-flex flex-column text-white">
+                    <span class="headerLogoText contactLogo d-flex flex-column">
                         <span>Вінницька</span>
                         <span>IT-Академія</span>
                     </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon contactBurger">
-                        <span class="headerLine bg-white"></span>
-                        <span class="headerLine bg-white"></span>
-                        <span class="headerLine bg-white"></span>
+                        <span class="headerLine contactLine"></span>
+                        <span class="headerLine contactLine"></span>
+                        <span class="headerLine contactLine"></span>
                     </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto gap-4">
-                        <li class="nav-item"><a href="./" class="nav-link text-white">Головна</a></li>
-                        <li class="nav-item"><a href="./about" class="nav-link text-white">Про нас</a></li>
-                        <li class="nav-item"><a href="./all_news" class="nav-link text-white">Новини</a></li>
-                        <li class="nav-item"><a href="./doc" class="nav-link text-white">Документи</a></li>
-                        <li class="nav-item"><a href="./contact" class="nav-link text-white active">Контакти</a></li>
+                        <li class="nav-item"><a href="./" class="nav-link contactLink">Головна</a></li>
+                        <li class="nav-item"><a href="./about" class="nav-link contactLink">Про нас</a></li>
+                        <li class="nav-item"><a href="./all_news" class="nav-link contactLink">Новини</a></li>
+                        <li class="nav-item"><a href="./doc" class="nav-link contactLink">Документи</a></li>
+                        <li class="nav-item"><a href="./contact" class="nav-link contactLink active">Контакти</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
          <!--"header end"-->
+         <!--"contactInfo start"-->
+         <div class="contactInfo container container-xl">
+                <h2 class="contactTitle">Контактна інформація</h2>
+                <div class="contactSection row">    
+                        <div class="contactFoto elem elem1 col-lg-6 col-md-12">
+                            <img class="contactImages w-100 py-1" src="./src/images/geolocation.webp" alt="Карта">
+                        </div>
+                    <div class="contactBlock elem elem2 col-lg-3 col-md-6 col-6 text-center">        
+                        <h5 class="contactData">Номер телефону</h5>
+                        <a class="contactInfoLink" href="tel:+380979699448"><p class="contactP">+(38097) 969-94-48</p></a>
+                        <a class="contactInfoLink" href="tel:+380979699448"><p class="contactP">+(38097) 969-94-48</p></a>
+                        <a class="contactInfoLink" href="tel:+380979699448"><p class="contactP">+(38097) 969-94-48</p></a>
+                        <h5 class="contactDataGap">Електронна пошта</h5>
+                        <a class="contactInfoLink" href="mailto:tradeunionita@gmail.com"><p class="contactP">tradeunionita@gmail.com</p></a>                      
+                        <a class="contactInfoLink" href="mailto:tradeunionita@gmail.com"><p class="contactP">tradeunionita@gmail.com</p></a>                      
+                    </div>
+                    <div class="contactBlock elem elem3 col-lg-3 col-md-6 col-6 text-center">        
+                        <h5 class="contactData">Графік роботи</h5>
+                        <p class="contactP">Понеділок 9:00-18:00</p>
+                        <p class="contactP">Вівторок 9:00-18:00</p>
+                        <p class="contactP">Середа 9:00-18:00</p>
+                        <p class="contactP">Четвер 9:00-18:00</p>
+                        <p class="contactP">П’ятниця 9:00-18:00</p>
+                        <p class="contactP">Субота 9:00-15:00</p>
+                        <p class="contactP">Неділя - вихідний</p>
+                    </div>
+                </div>
+        </div>     
+         <!--"contactInfo end"-->
     <!--"form start"-->
 
     <div class="form conteiner container-sm pt-5">       
