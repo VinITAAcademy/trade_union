@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Нова подія",
+        "image": "./src/images/conference.webp"
+    },
+    {
+        "title": "Ще одна новина",
+        "image": "./src/images/knows.webp"
+    },
+    {
+        "title": "Нова подія",
+        "image": "./src/images/charity.webp"
+    },
+    {
+        "title": "Ще одна новина",
+        "image": "./src/images/youth.webp"
+    },
+    {
+        "title": "Нова подія",
+        "image": "./src/images/history2019.webp"
+    },
+    {
+        "title": "Ще одна новина",
+        "image": "./src/images/history2020.webp"
+    },
+    {
+        "title": "Нова подія",
+        "image": "./src/images/history2023.webp"
+    },
+    {
+        "title": "Ще одна новина",
+        "image": "./src/images/charity2.webp"
+    }
+]

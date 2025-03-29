@@ -474,15 +474,6 @@ li {
     transition: color 0.3s ease;
 }
 /* =============================== Footer end ======================== */
-/* -------contact start----------------------------------------------- */
-.contactBurger span {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--white);
-}
-/* -------contact end----------------------------------------------- */
-
 /* -------all_news start----------------------------------------------- */
 .allNewsHeader {
     background: var(--white) !important;
@@ -668,6 +659,58 @@ li {
         text-align: center; 
     }
     /* -------team end----------------------------------------------- */
+    /* -------contact start----------------------------------------------- */
+    .contactImages {
+        width: 457px;
+    }
+    .contactInfo { 
+        padding: 100px 0;
+    }
+    .contactTitle {
+        font-family: var(--font1-700);
+        font-size: 36px;
+        border-bottom: 2px solid var(--green2);
+    }
+    .contactData {
+        font-family: var(--font1-600);
+        font-size: 28px;
+        margin: 10px 0 11px 0;
+    }
+    .contactDataGap {
+        font-family: var(--font1-600);
+        font-size: 28px;
+        padding: 30px 0 10px 0;
+    }
+    .contactP {
+        font-family: var(--font3-400);
+        font-size: 24px;
+        margin: 0 0 5px 0;
+
+    } 
+    .contactInfoLink {
+        color: var(--green2);
+    }
+    .contactLogo,
+    .contactLine,
+    .contactLink {
+        color: var(--green2);
+    }
+    .contactBurger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: var(--green2);
+    }
+    .navbar-scrolled .contactLogo, 
+    .navbar-scrolled .contactLine, 
+    .navbar-scrolled .contactLink {
+        color: var(--white) !important;
+        border-color: var(--white) !important; 
+    }
+    .navbar-scrolled .contactLine {
+        background-color: var(--white) !important;
+    }
+    /* -------contact end----------------------------------------------- */
  @media (max-width: 1200px) {
    /* --------------statistic start--------------------------------------------------------- */
     .statisticP {
@@ -709,6 +752,7 @@ li {
         margin: 10px 0 75px 0;
         font-size: 24px;
     }
+    
      /* --------------team end--------------------------------------------------------- */
 
      /* --------------about us start--------------------------------------------------------- */
@@ -721,6 +765,31 @@ li {
     }
      /* --------------about us end--------------------------------------------------------- */
 
+     .footer {
+        font-size: 24px;
+     }
+     .footerConteinerRightFont {
+        font-size: 24px;
+     }
+     /* --------------team end--------------------------------------------------------- */
+
+     /* --------------contact start--------------------------------------------------------- */
+    .contactTitle {
+        font-size: 28px;
+    }
+    .contactData {
+        margin: 10px 0 8px 0;
+        font-size: 22px;
+    }
+    .contactP {
+        margin: 0 0 5px 0;
+        font-size: 20px;
+    }
+    .contactDataGap {
+        padding: 25px 0 7px 0;
+        font-size: 22px;
+    }
+    /* --------------contact end--------------------------------------------------------- */
  /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
      .formFontTitle {       
@@ -865,11 +934,30 @@ li {
     }    
 
      /* --------------team end--------------------------------------------------------- */
+
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
        min-height: 72vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
+
+     /* --------------contactinfo start--------------------------------------------------------- */
+     .contactTitle {
+        font-size: 24px;
+    }
+     .contactData {
+        margin: 5px 0 8px 0;
+        font-size: 14px;
+    }
+    .contactP {
+        margin: 0 0 5px 0;
+        font-size: 12px;
+    }
+    .contactDataGap {
+        padding: 20px 0 0 0;
+        font-size: 14px;
+    }
+
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
