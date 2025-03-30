@@ -664,7 +664,7 @@ li {
         width: 457px;
     }
     .contactInfo { 
-        padding: 100px 0;
+        padding-top: 100px;
     }
     .contactTitle {
         font-family: var(--font1-700);
