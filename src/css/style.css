@@ -793,11 +793,11 @@ li {
  /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
      .formFontTitle {       
-        font-size: 24px !important;
+        font-size: 30px !important;
     }
     .contactUsContentFont,
     .formFontContent {
-        font-size: 18px !important;
+        font-size: 20px !important;
     } 
     /* --------------form end--------------------------------------------------------- */
 }
@@ -889,7 +889,17 @@ li {
         font-size: 14px;
     }
 
-     /* --------------team end--------------------------------------------------------- */     
+     /* --------------team end--------------------------------------------------------- */ 
+     /* --------------form start--------------------------------------------------------- */
+     .contactUsTitleFont,
+     .formFontTitle {       
+        font-size: 24px !important;
+    }
+    .contactUsContentFont,
+    .formFontContent {
+        font-size: 18px !important;
+    } 
+    /* --------------form end--------------------------------------------------------- */    
 
 }
 @media (max-width: 520px) {
@@ -957,6 +967,16 @@ li {
         padding: 20px 0 0 0;
         font-size: 14px;
     }
+    /* --------------form start--------------------------------------------------------- */
+    .contactUsTitleFont,
+    .formFontTitle {       
+       font-size: 24px !important;
+   }
+   .contactUsContentFont,
+   .formFontContent {
+       font-size: 16px !important;
+   } 
+   /* --------------form end--------------------------------------------------------- */
 
 }
 /* =============================== Form start ======================== */
