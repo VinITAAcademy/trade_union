@@ -664,7 +664,7 @@ li {
         width: 457px;
     }
     .contactInfo { 
-        padding: 100px 0;
+        padding-top: 100px;
     }
     .contactTitle {
         font-family: var(--font1-700);
@@ -681,9 +681,9 @@ li {
         font-size: 28px;
         padding: 30px 0 10px 0;
     }
-    .contactP {
+    .contactLi {
         font-family: var(--font3-400);
-        font-size: 24px;
+        font-size: 18px;
         margin: 0 0 5px 0;
 
     } 
@@ -772,7 +772,6 @@ li {
         font-size: 24px;
      }
      /* --------------team end--------------------------------------------------------- */
-
      /* --------------contact start--------------------------------------------------------- */
     .contactTitle {
         font-size: 28px;
@@ -940,7 +939,6 @@ li {
        min-height: 72vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
-
      /* --------------contactinfo start--------------------------------------------------------- */
      .contactTitle {
         font-size: 24px;
@@ -957,7 +955,11 @@ li {
         padding: 20px 0 0 0;
         font-size: 14px;
     }
-
+    /* --------------about start-------------------------------------------------------- */
+    .min-vh-100 {
+       min-height: 72vh !important;
+    }
+    /* --------------about end-------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
