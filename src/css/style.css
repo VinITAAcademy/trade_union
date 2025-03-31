@@ -761,10 +761,10 @@ li {
      /* --------------about us start--------------------------------------------------------- */
     .aboutUsTitleFont,
     .aboutUsFontNumber {
-        font-size: 24px;
+        font-size: 30px;
     }
     .aboutUsContentFont {
-        font-size: 18px;
+        font-size: 20px;
     }
      /* --------------about us end--------------------------------------------------------- */
 
@@ -901,7 +901,16 @@ li {
     .formFontContent {
         font-size: 18px !important;
     } 
-    /* --------------form end--------------------------------------------------------- */    
+    /* --------------form end--------------------------------------------------------- */  
+     /* --------------about us start--------------------------------------------------------- */
+     .aboutUsTitleFont,
+     .aboutUsFontNumber {
+         font-size: 24px;
+     }
+     .aboutUsContentFont {
+         font-size: 18px;
+     }
+      /* --------------about us end--------------------------------------------------------- */  
 
 }
 @media (max-width: 520px) {
@@ -1003,6 +1012,15 @@ li {
        min-height: 72vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
+     /* --------------about us start--------------------------------------------------------- */
+     .aboutUsTitleFont,
+     .aboutUsFontNumber {
+         font-size: 24px;
+     }
+     .aboutUsContentFont {
+         font-size: 16px;
+     }
+      /* --------------about us end--------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
