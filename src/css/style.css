@@ -795,11 +795,11 @@ li {
  /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
      .formFontTitle {       
-        font-size: 24px;
+        font-size: 30px !important;
     }
     .contactUsContentFont,
     .formFontContent {
-        font-size: 18px;
+        font-size: 20px !important;
     } 
     /* --------------form end--------------------------------------------------------- */
 }
@@ -891,7 +891,17 @@ li {
         font-size: 20px;
     }
 
-     /* --------------team end--------------------------------------------------------- */     
+     /* --------------team end--------------------------------------------------------- */ 
+     /* --------------form start--------------------------------------------------------- */
+     .contactUsTitleFont,
+     .formFontTitle {       
+        font-size: 24px !important;
+    }
+    .contactUsContentFont,
+    .formFontContent {
+        font-size: 18px !important;
+    } 
+    /* --------------form end--------------------------------------------------------- */    
 
 }
 @media (max-width: 520px) {
@@ -958,6 +968,18 @@ li {
         padding: 20px 0 0 0;
         font-size: 16px;
     }
+
+    /* --------------form start--------------------------------------------------------- */
+    .contactUsTitleFont,
+    .formFontTitle {       
+       font-size: 24px !important;
+   }
+   .contactUsContentFont,
+   .formFontContent {
+       font-size: 16px !important;
+   } 
+   /* --------------form end--------------------------------------------------------- */
+
     /* -------news start----------------------------------------------- */
        .newsTitle {
         font-size: 24px;
@@ -965,16 +987,17 @@ li {
     .newsAlt {
         font-size: 16px;
     }
+    /* -------news end----------------------------------------------- */
+
     /* -------description start----------------------------------------------- */
     .descriptionTitle {
         font-size: 24px;
     }
     .descriptionText {
         font-size: 16px;
-    }
-    
+    }    
     /* -------description end----------------------------------------------- */
-    /* -------news end----------------------------------------------- */
+    
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
        min-height: 72vh !important;
