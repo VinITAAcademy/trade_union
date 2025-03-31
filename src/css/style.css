@@ -795,11 +795,11 @@ li {
  /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
      .formFontTitle {       
-        font-size: 24px;
+        font-size: 30px !important;
     }
     .contactUsContentFont,
     .formFontContent {
-        font-size: 18px;
+        font-size: 20px !important;
     } 
     /* --------------form end--------------------------------------------------------- */
     /* ---------description start------------------------------------------------------------------- */
@@ -902,7 +902,6 @@ li {
         margin: 10px 0 50px 0;
         font-size: 18px;
     }
-
      /* --------------team end--------------------------------------------------------- */     
          /* ---------description start------------------------------------------------------------------- */
 .descriptionTitle {
@@ -912,6 +911,17 @@ li {
     font-size: 18px;
 }
     /* ---------description end------------------------------------------------------------------- */
+     /* --------------team end--------------------------------------------------------- */ 
+     /* --------------form start--------------------------------------------------------- */
+     .contactUsTitleFont,
+     .formFontTitle {       
+        font-size: 24px !important;
+    }
+    .contactUsContentFont,
+    .formFontContent {
+        font-size: 18px !important;
+    } 
+    /* --------------form end--------------------------------------------------------- */    
 
 }
 @media (max-width: 520px) {
@@ -978,6 +988,18 @@ li {
         padding: 20px 0 0 0;
         font-size: 24px;
     }
+
+    /* --------------form start--------------------------------------------------------- */
+    .contactUsTitleFont,
+    .formFontTitle {       
+       font-size: 24px !important;
+   }
+   .contactUsContentFont,
+   .formFontContent {
+       font-size: 16px !important;
+   } 
+   /* --------------form end--------------------------------------------------------- */
+
     /* -------news start----------------------------------------------- */
        .newsTitle {
         font-size: 24px;
@@ -985,16 +1007,17 @@ li {
     .newsAlt {
         font-size: 16px;
     }
+    /* -------news end----------------------------------------------- */
+
     /* -------description start----------------------------------------------- */
     .descriptionTitle {
         font-size: 24px;
     }
     .descriptionText {
         font-size: 16px;
-    }
-    
+    }    
     /* -------description end----------------------------------------------- */
-    /* -------news end----------------------------------------------- */
+    
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
        min-height: 72vh !important;
