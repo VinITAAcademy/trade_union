@@ -333,7 +333,7 @@ li {
 .descriptionTitle {
     font-family: var(--font4-700);
     color: var(--green2);
-    font-size: 36px;
+    font-size: 24px;
 }
 .descriptionLine {
     width: 100%;
@@ -342,7 +342,7 @@ li {
 }
 .descriptionText {
     font-family: var(--font3-300);
-    font-size: 24px;
+    font-size: 20px;
     margin: 5px 0 40px 0;
 }
 .descriptionImages {
@@ -664,7 +664,7 @@ li {
         width: 457px;
     }
     .contactInfo { 
-        padding: 100px 0;
+        padding-top: 100px;
     }
     .contactTitle {
         font-family: var(--font1-700);
@@ -681,9 +681,9 @@ li {
         font-size: 28px;
         padding: 30px 0 10px 0;
     }
-    .contactP {
+    .contactLi {
         font-family: var(--font3-400);
-        font-size: 24px;
+        font-size: 18px;
         margin: 0 0 5px 0;
 
     } 
@@ -721,10 +721,10 @@ li {
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
     .newsTitle {
-        font-size: 24px;
+        font-size: 28px;
     }
     .newsAlt {
-        font-size: 18px;
+        font-size: 23px;
     }
     /* -------news end----------------------------------------------- */
 
@@ -752,6 +752,9 @@ li {
         margin: 10px 0 75px 0;
         font-size: 24px;
     }
+    .team-title {
+        font-size: 32px;
+    }
     
      /* --------------team end--------------------------------------------------------- */
 
@@ -772,7 +775,6 @@ li {
         font-size: 24px;
      }
      /* --------------team end--------------------------------------------------------- */
-
      /* --------------contact start--------------------------------------------------------- */
     .contactTitle {
         font-size: 28px;
@@ -815,7 +817,7 @@ li {
         border: none !important;    
     }
     .headerTitle .primary {
-        font-size: 24px;
+        font-size: 20px;
         background-color: var(--green2);
     }
     .newsHeaderTitle .primary {
@@ -865,13 +867,13 @@ li {
     /* --------------history start--------------------------------------------------------- */
 
     .historyText {
-        font-size: 14px;
+        font-size: 20px;
     }
     .historyTitle {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 18px;
+        font-size: 22px;
     }
     /* --------------history end--------------------------------------------------------- */
      /* --------------team start-------------------------------------------------------- */
@@ -882,11 +884,11 @@ li {
         width: 170px;
     }
     .teamPosition {
-        font-size: 14px;
+        font-size: 20px;
     }
     .teamName {
         margin: 10px 0 50px 0;
-        font-size: 14px;
+        font-size: 20px;
     }
 
      /* --------------team end--------------------------------------------------------- */ 
@@ -905,7 +907,7 @@ li {
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
     .headerTitle .primary {
-        font-size: 18px;
+        font-size: 16px;
     }
     .newsHeaderTitle .primary {
         font-size: 18px;
@@ -922,13 +924,13 @@ li {
     /* --------------statictic end--------------------------------------------------------- */
     /* --------------history start--------------------------------------------------------- */
     .historyText {
-        font-size: 12px;
+        font-size: 16px;
     }
     .historyTitle {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 12px;
+        font-size: 16px;
     }
         /* --------------history end--------------------------------------------------------- */
       /* --------------team start-------------------------------------------------------- */
@@ -936,10 +938,10 @@ li {
         width: 120px;
     }
     .teamPosition {
-        font-size: 10px;
+        font-size: 16px;
     }
     .teamName {
-        font-size: 10px;
+        font-size: 16px;
 
     }    
 
@@ -947,26 +949,26 @@ li {
 
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
-       min-height: 72vh !important;
+       min-height: 97vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
-
      /* --------------contactinfo start--------------------------------------------------------- */
      .contactTitle {
         font-size: 24px;
     }
      .contactData {
         margin: 5px 0 8px 0;
-        font-size: 14px;
+        font-size: 20px;
     }
     .contactP {
         margin: 0 0 5px 0;
-        font-size: 12px;
+        font-size: 16px;
     }
     .contactDataGap {
         padding: 20px 0 0 0;
-        font-size: 14px;
+        font-size: 16px;
     }
+
     /* --------------form start--------------------------------------------------------- */
     .contactUsTitleFont,
     .formFontTitle {       
@@ -978,6 +980,29 @@ li {
    } 
    /* --------------form end--------------------------------------------------------- */
 
+    /* -------news start----------------------------------------------- */
+       .newsTitle {
+        font-size: 24px;
+    }
+    .newsAlt {
+        font-size: 16px;
+    }
+    /* -------news end----------------------------------------------- */
+
+    /* -------description start----------------------------------------------- */
+    .descriptionTitle {
+        font-size: 24px;
+    }
+    .descriptionText {
+        font-size: 16px;
+    }    
+    /* -------description end----------------------------------------------- */
+    
+    /* --------------about start-------------------------------------------------------- */
+    .min-vh-100 {
+       min-height: 72vh !important;
+    }
+    /* --------------about end-------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
