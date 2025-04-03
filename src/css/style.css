@@ -152,7 +152,7 @@ li {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 4px;
     transition: background-color 0.3s;
@@ -333,7 +333,7 @@ li {
 .descriptionTitle {
     font-family: var(--font4-700);
     color: var(--green2);
-    font-size: 24px;
+    font-size: 36px;
 }
 .descriptionLine {
     width: 100%;
@@ -342,7 +342,7 @@ li {
 }
 .descriptionText {
     font-family: var(--font3-300);
-    font-size: 20px;
+    font-size: 28px;
     margin: 5px 0 40px 0;
 }
 .descriptionImages {
@@ -721,10 +721,10 @@ li {
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
     .newsTitle {
-        font-size: 28px;
+        font-size: 30px;
     }
     .newsAlt {
-        font-size: 23px;
+        font-size: 20px;
     }
     /* -------news end----------------------------------------------- */
 
@@ -735,10 +735,10 @@ li {
         font-size: 20px;
     }
     .historyTitle {
-        font-size: 28px;
+        font-size: 30px;
     }
     .accordion-header {
-        font-size: 28px;
+        font-size: 30px;
     }
     /* --------------history end--------------------------------------------------------- */
     /* --------------team start-------------------------------------------------------- */
@@ -746,14 +746,14 @@ li {
         width: 220px;
     }
     .teamPosition {
-        font-size: 24px;
+        font-size: 20px;
     }
     .teamName {
         margin: 10px 0 75px 0;
-        font-size: 24px;
+        font-size: 20px;
     }
     .team-title {
-        font-size: 32px;
+        font-size: 30px;
     }
     
      /* --------------team end--------------------------------------------------------- */
@@ -761,10 +761,10 @@ li {
      /* --------------about us start--------------------------------------------------------- */
     .aboutUsTitleFont,
     .aboutUsFontNumber {
-        font-size: 24px;
+        font-size: 30px;
     }
     .aboutUsContentFont {
-        font-size: 18px;
+        font-size: 20px;
     }
      /* --------------about us end--------------------------------------------------------- */
 
@@ -777,11 +777,11 @@ li {
      /* --------------team end--------------------------------------------------------- */
      /* --------------contact start--------------------------------------------------------- */
     .contactTitle {
-        font-size: 28px;
+        font-size: 30px;
     }
     .contactData {
         margin: 10px 0 8px 0;
-        font-size: 22px;
+        font-size: 24px;
     }
     .contactP {
         margin: 0 0 5px 0;
@@ -789,7 +789,7 @@ li {
     }
     .contactDataGap {
         padding: 25px 0 7px 0;
-        font-size: 22px;
+        font-size: 24px;
     }
     /* --------------contact end--------------------------------------------------------- */
  /* --------------form start--------------------------------------------------------- */
@@ -802,6 +802,15 @@ li {
         font-size: 20px !important;
     } 
     /* --------------form end--------------------------------------------------------- */
+    /* ---------description start------------------------------------------------------------------- */
+.descriptionTitle {
+    font-size: 30px;
+}
+.descriptionText {
+    font-size: 20px;
+}
+    /* ---------description end------------------------------------------------------------------- */
+
 }
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
@@ -810,6 +819,9 @@ li {
         background-size: cover;
         background-position: center;
     }
+    .button {
+        font-size: 16px;
+    }
     .navbar-nav {
         text-align: center;
     }
@@ -817,7 +829,7 @@ li {
         border: none !important;    
     }
     .headerTitle .primary {
-        font-size: 20px;
+        font-size: 24px;
         background-color: var(--green2);
     }
     .newsHeaderTitle .primary {
@@ -867,13 +879,13 @@ li {
     /* --------------history start--------------------------------------------------------- */
 
     .historyText {
-        font-size: 20px;
+        font-size: 18px;
     }
     .historyTitle {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 22px;
+        font-size: 24px;
     }
     /* --------------history end--------------------------------------------------------- */
      /* --------------team start-------------------------------------------------------- */
@@ -884,13 +896,21 @@ li {
         width: 170px;
     }
     .teamPosition {
-        font-size: 20px;
+        font-size: 18px;
     }
     .teamName {
         margin: 10px 0 50px 0;
-        font-size: 20px;
+        font-size: 18px;
     }
-
+     /* --------------team end--------------------------------------------------------- */     
+         /* ---------description start------------------------------------------------------------------- */
+.descriptionTitle {
+    font-size: 24px;
+}
+.descriptionText {
+    font-size: 18px;
+}
+    /* ---------description end------------------------------------------------------------------- */
      /* --------------team end--------------------------------------------------------- */ 
      /* --------------form start--------------------------------------------------------- */
      .contactUsTitleFont,
@@ -901,16 +921,25 @@ li {
     .formFontContent {
         font-size: 18px !important;
     } 
-    /* --------------form end--------------------------------------------------------- */    
+    /* --------------form end--------------------------------------------------------- */  
+     /* --------------about us start--------------------------------------------------------- */
+     .aboutUsTitleFont,
+     .aboutUsFontNumber {
+         font-size: 24px;
+     }
+     .aboutUsContentFont {
+         font-size: 18px;
+     }
+      /* --------------about us end--------------------------------------------------------- */  
 
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
     .headerTitle .primary {
-        font-size: 16px;
+        font-size: 24px;
     }
     .newsHeaderTitle .primary {
-        font-size: 18px;
+        font-size: 24px;
     }
      /* --------------header end--------------------------------------------------------- */
      /* --------------statictic start--------------------------------------------------------- */
@@ -930,7 +959,7 @@ li {
         font-size: 24px;
     }
     .accordion-header {
-        font-size: 16px;
+        font-size: 24px;
     }
         /* --------------history end--------------------------------------------------------- */
       /* --------------team start-------------------------------------------------------- */
@@ -958,7 +987,7 @@ li {
     }
      .contactData {
         margin: 5px 0 8px 0;
-        font-size: 20px;
+        font-size: 24px;
     }
     .contactP {
         margin: 0 0 5px 0;
@@ -966,7 +995,7 @@ li {
     }
     .contactDataGap {
         padding: 20px 0 0 0;
-        font-size: 16px;
+        font-size: 24px;
     }
 
     /* --------------form start--------------------------------------------------------- */
@@ -1003,6 +1032,15 @@ li {
        min-height: 72vh !important;
     }
     /* --------------about end-------------------------------------------------------- */
+     /* --------------about us start--------------------------------------------------------- */
+     .aboutUsTitleFont,
+     .aboutUsFontNumber {
+         font-size: 24px;
+     }
+     .aboutUsContentFont {
+         font-size: 16px;
+     }
+      /* --------------about us end--------------------------------------------------------- */
 }
 /* =============================== Form start ======================== */
 .contactUsTitleFont {
