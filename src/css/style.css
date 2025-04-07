@@ -434,7 +434,7 @@ li {
 .footer {
     background-color: var(--background-footer);
     color: var(--text-white);
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .footerColorTextElement {
@@ -443,11 +443,11 @@ li {
 
 .footerTextElementP {
     font-family: var(--font-footer-contacts-title);
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .footerConteinerRightFont {
-    font-size: 36px;
+    font-size: 24px;
     font-family: var(--font-footer-contacts-content);
     padding-top: 11px;
 }
@@ -773,7 +773,7 @@ li {
     /* --------------footer start-------------------------------------------------------- */
     .footer,
     .footerConteinerRightFont {
-        font-size: 30px;
+        font-size: 24px;
     }
     .footerTextElementP {
         font-size: 20px;
@@ -931,7 +931,7 @@ li {
     /* --------------footer start-------------------------------------------------------- */
     .footer,
     .footerConteinerRightFont {
-        font-size: 24px;
+        font-size: 20px;
     }
     .footerTextElementP {
         font-size: 18px;
@@ -941,7 +941,7 @@ li {
      /* --------------about us start--------------------------------------------------------- */
      .aboutUsTitleFont,
      .aboutUsFontNumber {
-         font-size: 24px;
+         font-size: 20px;
      }
      .aboutUsContentFont {
          font-size: 18px;
@@ -1052,7 +1052,7 @@ li {
     /* --------------footer start-------------------------------------------------------- */
     .footer,
     .footerConteinerRightFont {
-        font-size: 24px;
+        font-size: 18px;
     }
     .footerTextElementP {
         font-size: 16px;
