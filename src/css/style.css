@@ -304,7 +304,7 @@ li {
         display: block;
         width: 30px;
         height: 3px;
-        background-color: var(--green2);
+        background-color: var(--text-white);
     }
     .navbar-scrolled .navbarTogglerIcon span {
         background-color: var(--white);
@@ -665,6 +665,7 @@ li {
     /* -------contact start----------------------------------------------- */
     .contactImages {
         width: 457px;
+        margin-top: 20px;
     }
     .contactInfo { 
         padding-top: 100px;
@@ -677,7 +678,7 @@ li {
     .contactData {
         font-family: var(--font1-600);
         font-size: 28px;
-        margin: 10px 0 11px 0;
+        margin: 27px 0 11px 0;
     }
     .contactDataGap {
         font-family: var(--font1-600);
@@ -688,7 +689,7 @@ li {
         font-family: var(--font3-400);
         font-size: 18px;
         margin: 0 0 5px 0;
-
+        line-height: 2;
     } 
     .contactInfoLink {
         color: var(--green2);
@@ -714,12 +715,26 @@ li {
         background-color: var(--white) !important;
     }
     /* -------contact end----------------------------------------------- */
+    .swiper-slide img {
+        transition: 0.3s ease;
+        filter: blur(3px);
+        transform: scale(0.95);
+        cursor: pointer;
+    }
+    
+    .swiper-slide.active-slide img {
+        filter: blur(0);
+        transform: scale(1);
+    }
  @media (max-width: 1200px) {
    /* --------------statistic start--------------------------------------------------------- */
     .statisticP {
         max-width: 300px; 
         white-space: normal; 
         margin: 0 auto;
+    }
+    .statisticBlock {
+        margin: 0 0 50px 0;
     }
     /* -------static end----------------------------------------------- */
     /* -------news start----------------------------------------------- */
@@ -769,6 +784,9 @@ li {
     .aboutUsContentFont {
         font-size: 20px;
     }
+    .aboutIntro {
+        margin: 0 0 50px 0;
+    }
      /* --------------about us end--------------------------------------------------------- */
     /* --------------footer start-------------------------------------------------------- */
     .footer,
@@ -817,6 +835,38 @@ li {
     /* ---------description end------------------------------------------------------------------- */
 
 }
+@media (max-width: 990px) {
+    .navbar {
+    background: var(--green2);
+    }
+    .contactLogo {
+        color: var(--text-white);
+    }
+    .contactBurger span {
+        background-color: var(--white);
+    }
+    .contactLink {
+        color: var(--text-white);
+    }
+    a.nav-link.contactLink.active {
+        color: var(--text-white);
+    }
+    .allNewsLogoText {
+        color: var(--text-white);
+    }
+    .allNewsNavbarTogglerIcon span {
+        background-color: var(--white);
+    }
+    .allNewsLink {
+        color: var(--text-white);
+    }
+    a.nav-link.allNewsLink.active {
+        color: var(--text-white);
+    }
+    .contactLi {
+        line-height: 1.7;
+    } 
+}
 @media (max-width: 768px) {
     /* -------header start----------------------------------------------- */
     #header {
@@ -844,7 +894,7 @@ li {
         display: block;
         width: 32px;
         height: 3px;
-       background-color: var(--black);
+       background-color: var(--text-white);
     } 
     .newsHeaderLine {
         color: var(--white);
@@ -853,7 +903,7 @@ li {
         display: inline-block;
     }
     .headerLogoText {
-        color: black;
+        color: var(--text-white);
     }
     .newsHeaderLogoText {
         color: var(--text-white);
@@ -947,7 +997,12 @@ li {
          font-size: 18px;
      }
       /* --------------about us end--------------------------------------------------------- */  
-
+    /* --------------form end--------------------------------------------------------- */    
+    /* --------------contact start--------------------------------------------------------- */    
+    .contactImages {
+        margin-top: 10px;
+    }
+    /* --------------contact end--------------------------------------------------------- */    
 }
 @media (max-width: 520px) {
      /* -------header start----------------------------------------------- */
@@ -965,6 +1020,9 @@ li {
     .statisticP {
         max-width: 190px;
         font-size: 24px;
+    }
+    .statisticBlock {
+        margin: 0 0 20px 0;
     }
     /* --------------statictic end--------------------------------------------------------- */
     /* --------------history start--------------------------------------------------------- */
@@ -1046,6 +1104,9 @@ li {
     /* --------------about start-------------------------------------------------------- */
     .min-vh-100 {
        min-height: 72vh !important;
+    }
+    .aboutIntro {
+        margin: 0 0 20px 0;
     }
     /* --------------about end-------------------------------------------------------- */
 
