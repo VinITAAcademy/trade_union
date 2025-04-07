@@ -17,15 +17,37 @@ document.querySelectorAll(".accordion-header").forEach((header) => {
 /* -------accordion end----------------------------------------------- */
 /* -------swiper start----------------------------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new Swiper(".team-slider", {
-        slidesPerView: 2.5, 
-        centeredSlides: false, 
+    const swiper = new Swiper(".team-slider", {
+        slidesPerView: 2.5,
+        centeredSlides: false,
         loop: true,
         navigation: {
             nextEl: ".swiper-next",
             prevEl: ".swiper-prev",
-        }
+        },
     });
+
+    const slides = document.querySelectorAll(".swiper-slide");
+
+    slides.forEach((slide) => {
+        slide.addEventListener("click", () => {
+            const realIndex = parseInt(slide.getAttribute("data-swiper-slide-index"));
+            swiper.slideToLoop(realIndex); 
+        });
+    });
+
+    function updateBlur() {
+        swiper.slides.forEach((slide, index) => {
+            if (index === swiper.activeIndex) {
+                slide.classList.remove("blur");
+            } else {
+                slide.classList.add("blur");
+            }
+        });
+    }
+
+    swiper.on("slideChange", updateBlur);
+    updateBlur();
 });
 /* -------swiper end----------------------------------------------- */
 /* -------createElement start----------------------------------------------- */
